@@ -1,0 +1,187 @@
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(16px, 3vw, 43px);
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+	text-decoration: none;
+    color: var(--color-black);
+    font-family: 'Mulish', sans-serif;
+}
+
+a:hover {
+    color: var(--color-red);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.footer-brand-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 3vw, 60px);
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    justify-content: center;
+    width: 30vw;
+}
+.footer-brand-name:hover {
+    color: red;
+}
+.logo-red-dot {
+    color: var(--color-red);
+}
+
+/* Disposition grid */
+.footer-wrapper {
+    display: grid;
+    gap: 30px;
+    padding: 80px 60px 50px;
+}
+
+/* Newsletter */
+.newsletter-form {
+    grid-column: 2;
+    grid-row: 1 / span 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border: none;
+    font-size: 16px;
+    display: inline;
+    cursor: pointer;
+}
+.newsletter-btn:hover {
+    background-color: var(--color-red);
+}
+
+.input-newsletter {
+    border: none;
+    border-bottom: solid var(--color-black) 1px;
+    width: 180px;
+    height: 25px;
+}
+.input-newsletter::placeholder {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.input-newsletter:focus {
+    outline: none;
+}
+
+/* Boutons réseaux sociaux */
+.social-btn {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.social-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.social-btn a:hover {
+    fill: var(--color-red)
+}
+
+/* Pages footer */
+.footer-page-list {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+.footer-legal-pages {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+.footer-page-list, .footer-legal-pages {
+    gap: 15px;
+    justify-content: center;
+}
+.footer-legal-pages a {
+    font-size: clamp(9px, 3vw, 16px);
+}
+.footer-plus {
+    font-size: 20px;
+    color: gray;
+    display: none;
+}
+.footer-separation-fixe {
+    margin: 0 5px;
+}
+
+/********* MEDIA QUERIES **********/
+
+@media (max-width: 850px) {
+
+    .footer-wrapper {
+        padding: 50px 25px 35px;
+    }
+
+    .footer-brand-name {
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: flex-start;
+    }
+      
+    .newsletter-form {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        display: block;
+    }
+    .input-newsletter {
+        border: none;
+        border-bottom: solid var(--color-black) 1px;
+        width: 150px;
+        height: 25px;
+    }
+    .social-btn {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .footer-page-list {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-legal-pages {
+        grid-column: 1;
+        grid-row: 5;
+        gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .footer-separation {
+        display: none;
+    }
+    .footer-plus {
+        display: inline;
+    }
+    
+}
