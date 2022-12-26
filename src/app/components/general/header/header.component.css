@@ -1,0 +1,207 @@
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(16px, 3vw, 43px);
+}
+
+a {
+	text-decoration: none;
+    color: var(--color-black);
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    position: sticky;
+	top: 0;
+    z-index: 5;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* BARRE DE NAVIGATION */
+.logo-red-dot {
+    color: var(--color-red);
+}
+
+.top-nav {
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(10px); 
+    /* Permet l'effet blur sur Safari */
+    justify-content: space-between;
+    height: 78px;
+    padding: 0px 60px;
+}
+
+.nav-right, .nav-left {
+    gap: 20px;
+}
+
+.top-nav a {
+    font-weight: 400;
+    font-size: clamp(12.5px, 1vw, 14px);
+}
+
+.top-nav a:hover {
+    color: var(--color-red);
+}
+
+/* Cacher les icônes qui n'apparaissent qu'en version mobile */
+.burger-icon, .search-icon, .heart-wishlist-icon, .profile-icon {
+    display: none;
+}
+.basket-icon {
+    margin-left: 10px;
+}
+.profile-icon, .search-icon {
+    stroke: black;
+}
+.heart-wishlist-icon {
+    fill: var(--color-black);
+}
+.burger-icon:hover, .search-icon:hover, .heart-wishlist-icon:hover, .profile-icon:hover, .basket-icon:hover, .heart-wishlist-icon:hover, .basket:hover {
+    fill: var(--color-red);
+    color: var(--color-red);
+}
+.profile-icon:hover, .search-icon:hover {
+    stroke: var(--color-red);
+}
+
+/* MENU BURGER */
+.menu>a {
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: var(--color-black);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    /* Animation du burger */
+    transition: transform 900ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgb(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+
+
+
+/********* MEDIA QUERIES **********/
+
+@media (max-width: 850px) {
+
+    .burger-icon, .search-icon, .heart-wishlist-icon, .profile-icon, .basket-icon {
+        display: block;
+    }
+
+    .basket-icon {
+        margin: 0;
+    }
+
+    .top-nav-text {
+        display: none;
+    }
+
+    .top-nav {
+        height: 60px;
+        padding: 0px 10px;
+    }
+
+    .nav-left {
+        gap: 0;
+    }
+
+    /* NAVBAR - BURGER */
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0;
+        font-size: 20px;
+    }
+
+    #menu-toggle~.menu a {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu a {
+        font-size: 16px;
+        height: 6em;
+        padding: 3.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>a {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255);
+    }
+
+    .menu>a:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+
+}
