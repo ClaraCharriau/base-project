@@ -27,6 +27,7 @@ header {
 /* BARRE DE NAVIGATION */
 .logo-red-dot {
     color: var(--color-red);
+    font-family: 'Inter', sans-serif;
 }
 
 .top-nav {

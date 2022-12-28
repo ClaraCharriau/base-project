@@ -1,0 +1,24 @@
+section {
+    display: flex;
+}
+
+section img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.photo-miniature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo-miniature img {
+    object-fit: cover;
+    height: 180px;
+    cursor: pointer;
+}
+
+.photo-miniature img:hover {
+    opacity: 0.8;
+}
