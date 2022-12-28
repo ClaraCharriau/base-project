@@ -1,0 +1,35 @@
+.categories_type_insta {
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+.categories_type_insta div {
+    height: 430px;
+}
+
+.tops {
+    background-image: url(/assets/all-categories-images/femme_tops.png);
+}
+
+.bas {
+    background-image: url(/assets/all-categories-images/femme_bas.png);
+}
+
+.robes {
+    background-image: url(/assets/all-categories-images/femme_robes.png);
+}
+
+.vestes {
+    background-image: url(/assets/all-categories-images/femme_vestes.png);
+}
+
+.manteaux {
+    background-image: url(/assets/all-categories-images/femme_manteaux.png);
+}
+
+.tout {
+    background-image: url(/assets/all-categories-images/femme_tout.png);
+}

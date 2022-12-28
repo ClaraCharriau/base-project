@@ -14,6 +14,9 @@ import { ProductSizeComponent } from './components/single-product/product-size/p
 import { ProductSpecsComponent } from './components/single-product/product-specs/product-specs.component';
 import { SizeGuideComponent } from './components/single-product/size-guide/size-guide.component';
 import { RecentlyConsultedComponent } from './components/single-product/recently-consulted/recently-consulted.component';
+import { SeasonSectionComponent } from './components/all-categories/season-section/season-section.component';
+import { InstaSectionComponent } from './components/all-categories/insta-section/insta-section.component';
+import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { RecentlyConsultedComponent } from './components/single-product/recently
     ProductSizeComponent,
     ProductSpecsComponent,
     SizeGuideComponent,
-    RecentlyConsultedComponent
+    RecentlyConsultedComponent,
+    SeasonSectionComponent,
+    InstaSectionComponent,
+    AllCategoriesComponent
   ],
   imports: [
     BrowserModule,
