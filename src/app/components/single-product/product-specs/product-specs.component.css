@@ -1,0 +1,50 @@
+
+/* Typographie */
+p {
+    font-size: clamp(10px, 3vw, 20px);
+    font-weight: 300;
+    margin: 15px 0;
+}
+.description-details-box {
+    width: 100%;
+}
+
+.descproduit {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-black);
+    margin: 15px 0;
+    font-family: 'Inter', sans-serif;
+}
+.little-text {
+    font-size: 16px;
+}
+.special-text {
+    line-height: 60px;
+}
+
+/* disparition des textes */
+.toggle-icon {
+    transition: transform 0.30s;
+    transform: rotate(-180deg);
+    margin-bottom: -4px;
+}
+
+.descproduit:hover, .toggle-icon:hover  {
+    cursor: pointer;
+}
+
+.rotateIcon {
+    transition: transform 0.30s;
+    transform: rotate(0deg);
+}
+
+.hidden-text {
+    margin-left: 10px;
+}
+
+
+.matiere {
+    margin-top: 30px;
+}
