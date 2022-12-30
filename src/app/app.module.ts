@@ -17,6 +17,8 @@ import { RecentlyConsultedComponent } from './components/single-product/recently
 import { SeasonSectionComponent } from './components/all-categories/season-section/season-section.component';
 import { InstaSectionComponent } from './components/all-categories/insta-section/insta-section.component';
 import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { AllCategoriesComponent } from './pages/all-categories/all-categories.co
     RecentlyConsultedComponent,
     SeasonSectionComponent,
     InstaSectionComponent,
-    AllCategoriesComponent
+    AllCategoriesComponent,
+    HomepageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
