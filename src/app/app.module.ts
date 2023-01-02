@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/general/header/header.component';
 import { FooterComponent } from './components/general/footer/footer.component';
-import { SingleProductComponent } from './pages/single-product/single-product.component';
 import { FilArianeComponent } from './components/general/fil-ariane/fil-ariane.component';
 import { ProductDescriptionComponent } from './components/single-product/product-description/product-description.component';
 import { ProductPhotosComponent } from './components/single-product/product-photos/product-photos.component';
@@ -14,6 +13,11 @@ import { ProductSizeComponent } from './components/single-product/product-size/p
 import { ProductSpecsComponent } from './components/single-product/product-specs/product-specs.component';
 import { SizeGuideComponent } from './components/single-product/size-guide/size-guide.component';
 import { RecentlyConsultedComponent } from './components/single-product/recently-consulted/recently-consulted.component';
+import { SortingProductsComponent } from './components/Single-category/sorting-products/sorting-products.component';
+import { SingleCategoryComponent } from './pages/single-category/single-category.component';
+import { ProductCardComponent } from './components/Single-category/product-card/product-card.component';
+import { AllProductsComponent } from './components/Single-category/all-products/all-products.component';
+import { CarreColorsComponent } from './components/general/carre-colors/carre-colors.component';
 import { SeasonSectionComponent } from './components/all-categories/season-section/season-section.component';
 import { InstaSectionComponent } from './components/all-categories/insta-section/insta-section.component';
 import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
@@ -37,7 +41,6 @@ import { CarouselComponent } from './components/general/carousel/carousel.compon
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SingleProductComponent,
     FilArianeComponent,
     ProductDescriptionComponent,
     ProductPhotosComponent,
@@ -46,6 +49,11 @@ import { CarouselComponent } from './components/general/carousel/carousel.compon
     ProductSpecsComponent,
     SizeGuideComponent,
     RecentlyConsultedComponent,
+    SortingProductsComponent,
+    SingleCategoryComponent,
+    ProductCardComponent,
+    AllProductsComponent,
+    CarreColorsComponent,
     SeasonSectionComponent,
     InstaSectionComponent,
     AllCategoriesComponent,

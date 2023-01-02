@@ -1,0 +1,16 @@
+<div class="all-products">
+    <div class="product-card">
+        
+        <li *ngFor="let product of products">
+            <img src="{{product.img}}" alt="photo produit">
+             <p>{{product.title}}</p>
+             <p> {{product.price | currency:'EUR':'symbol':'1.2-4'}} </p>
+             </li>
+
+             <!-- <app-carre-colors [colorOne]="colorOne"> </app-carre-colors> -->
+
+    </div>
+
+
+
+</div>
