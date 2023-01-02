@@ -20,4 +20,4 @@ describe('SingleProductComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+});;
