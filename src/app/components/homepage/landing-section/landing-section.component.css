@@ -1,0 +1,69 @@
+.flex {
+    display: flex;
+}
+
+.text-arrow {
+    font-size: clamp(20px, 2vw, 28px);
+    text-align: end;
+    font-weight: 700;
+    gap: 15px;
+}
+
+
+/* HOMME - FEMME */
+.container-homme-femme {
+    gap: 60px;
+    height: 80vh;
+    margin-top: 50px;
+}
+
+.carre-femme, .carre-homme {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.carre-homme {
+    background-image: url("src/assets/homepage-images/willow-kaii-unsplash.jpg");
+    background-position: auto -20px;
+}
+.carre-femme {
+    background-image: url("src/assets/homepage-images/michal-binkiewicz-unsplash.jpg");
+    background-position: auto -50px;
+}
+
+.carre-femme .text-arrow, .carre-homme .text-arrow {
+    position: absolute;
+    bottom: 35px;
+    right: 80px;
+}
+
+@media (max-width: 850px) {
+
+    
+    /* HOMME / FEMME */
+    .container-homme-femme {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .carre-femme, .carre-homme {
+        width: 100%;
+        background-position: -11px -80px;
+    }
+    .carre-femme {
+        background-position: -11px -30px;
+    }
+
+    .carre-femme .text-arrow, .carre-homme .text-arrow {
+        position: absolute;
+        bottom: 22px;
+        right: 15px;
+    }
+    .text-arrow {
+        gap: 2px;
+    }
+
+}

@@ -26,6 +26,11 @@ import { CartTotalComponent } from './components/cart/cart-total/cart-total.comp
 import { CartPaymentInfosComponent } from './components/cart/cart-payment-infos/cart-payment-infos.component';
 import { CartPromoCodeComponent } from './components/cart/cart-promo-code/cart-promo-code.component';
 import { CartCounterComponent } from './components/cart/cart-counter/cart-counter.component';
+import { LandingSectionComponent } from './components/homepage/landing-section/landing-section.component';
+import { NouveauteSectionComponent } from './components/homepage/nouveaute-section/nouveaute-section.component';
+import { BestSellerSectionComponent } from './components/homepage/best-seller-section/best-seller-section.component';
+import { EngagementsSectionComponent } from './components/homepage/engagements-section/engagements-section.component';
+import { CarouselComponent } from './components/general/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,12 @@ import { CartCounterComponent } from './components/cart/cart-counter/cart-counte
     CartTotalComponent,
     CartPaymentInfosComponent,
     CartPromoCodeComponent,
-    CartCounterComponent
+    CartCounterComponent,
+    LandingSectionComponent,
+    NouveauteSectionComponent,
+    BestSellerSectionComponent,
+    EngagementsSectionComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
