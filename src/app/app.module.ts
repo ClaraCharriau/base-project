@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/general/header/header.component';
 import { FooterComponent } from './components/general/footer/footer.component';
 import { FilArianeComponent } from './components/general/fil-ariane/fil-ariane.component';
+import { SingleProductComponent } from './pages/single-product/single-product.component';
 import { ProductDescriptionComponent } from './components/single-product/product-description/product-description.component';
 import { ProductPhotosComponent } from './components/single-product/product-photos/product-photos.component';
 import { ProductRatingComponent } from './components/single-product/product-rating/product-rating.component';
@@ -42,6 +43,7 @@ import { CarouselComponent } from './components/general/carousel/carousel.compon
     HeaderComponent,
     FooterComponent,
     FilArianeComponent,
+    SingleProductComponent,
     ProductDescriptionComponent,
     ProductPhotosComponent,
     ProductRatingComponent,
