@@ -13,17 +13,14 @@ import { ProductSizeComponent } from './components/single-product/product-size/p
 import { ProductSpecsComponent } from './components/single-product/product-specs/product-specs.component';
 import { SizeGuideComponent } from './components/single-product/size-guide/size-guide.component';
 import { RecentlyConsultedComponent } from './components/single-product/recently-consulted/recently-consulted.component';
-<<<<<<< HEAD
 import { SortingProductsComponent } from './components/Single-category/sorting-products/sorting-products.component';
 import { SingleCategoryComponent } from './pages/single-category/single-category.component';
 import { ProductCardComponent } from './components/Single-category/product-card/product-card.component';
 import { AllProductsComponent } from './components/Single-category/all-products/all-products.component';
 import { CarreColorsComponent } from './components/general/carre-colors/carre-colors.component';
-=======
 import { SeasonSectionComponent } from './components/all-categories/season-section/season-section.component';
 import { InstaSectionComponent } from './components/all-categories/insta-section/insta-section.component';
 import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
->>>>>>> a88c25550ad2588f4563b905989f56f745f2b41f
 
 @NgModule({
   declarations: [
@@ -38,17 +35,14 @@ import { AllCategoriesComponent } from './pages/all-categories/all-categories.co
     ProductSpecsComponent,
     SizeGuideComponent,
     RecentlyConsultedComponent,
-<<<<<<< HEAD
     SortingProductsComponent,
     SingleCategoryComponent,
     ProductCardComponent,
     AllProductsComponent,
-    CarreColorsComponent
-=======
+    CarreColorsComponent,
     SeasonSectionComponent,
     InstaSectionComponent,
     AllCategoriesComponent
->>>>>>> a88c25550ad2588f4563b905989f56f745f2b41f
   ],
   imports: [
     BrowserModule,

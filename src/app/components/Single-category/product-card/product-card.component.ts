@@ -55,6 +55,7 @@ export class ProductCardComponent {
       price : 39.99,
     },
   
+  
   ]
   @Input() carre!: Carre[] 
   }
