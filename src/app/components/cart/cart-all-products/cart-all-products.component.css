@@ -1,0 +1,25 @@
+/* GAUCHE - LISTE DES ARTICLES */
+.articles-list {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+    width: 60vw;
+    min-width: 450px;
+    flex-direction: column;
+}
+
+@media (max-width: 850px) {
+
+    .articles-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .articles-list {
+        align-items: center;
+        min-width: 0px;
+        gap: 50px;
+    }
+}

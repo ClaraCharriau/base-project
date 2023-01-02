@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.basket-little-title {
+    font-weight: 700;
+    font-size: 25px;
+    align-self: flex-start;
+}
+
+/* Disposition des éléments */
+.right-side-order {
+    width: 30vw;
+}
+.basket-total-facturation, .basket-delivery-info, .basket-paiements-infos, .basket-promotion-infos {
+    gap: 20px;
+}
+
+.basket-subtotal, .basket-delivery-total, .basket-total {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Facturation */
+.divider-total-facturation {
+    /* Barre horizontale */
+    width: 80%;
+}
+
+/* Bouton commander */
+.basket-order-btn {
+    background-color: var(--color-black);
+    padding: 16px 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 25px);
+    color: var(--color-white);
+    border: none;
+}
+.basket-order-btn a {
+    color: var(--color-white);
+}
+.basket-order-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-red);
+}
