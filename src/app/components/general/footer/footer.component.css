@@ -41,6 +41,7 @@ a:hover {
 }
 .logo-red-dot {
     color: var(--color-red);
+    font-family: 'Inter', sans-serif;
 }
 
 /* Disposition grid */

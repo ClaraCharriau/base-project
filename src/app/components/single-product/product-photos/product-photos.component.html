@@ -1,1 +1,17 @@
-<p>product-photos works!</p>
+<section class="product-photos">
+
+    <div class="photo-miniature">
+        
+        <img (click)="firstPhoto()" src={{pullImage.photoone}} alt={{pullImage.alternativetext}}>
+        
+        <img (click)="secondPhoto()" src={{pullImage.phototwo}} alt={{pullImage.alternativetext}}>
+        
+        <img (click)="thirdPhoto()" src={{pullImage.photothree}} alt={{pullImage.alternativetext}}>
+        
+        <img (click)="fourthPhoto()" src={{pullImage.photofour}} alt={{pullImage.alternativetext}}>
+    </div>
+
+    <img [src]="image" alt={{pullImage.alternativetext}}>
+
+
+</section>

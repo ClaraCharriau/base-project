@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ProductSpecsComponent {
 
+  descriptionIsVisible: boolean = false;
+  matiereIsVisible: boolean = false;
+
+  showProductDescription() {
+      this.descriptionIsVisible = !this.descriptionIsVisible;
+  }
+
+  showProductMatiere() {
+      this.matiereIsVisible = !this.matiereIsVisible;
+  }
+
 }
