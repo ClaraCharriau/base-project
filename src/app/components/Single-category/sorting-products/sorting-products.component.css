@@ -1,0 +1,16 @@
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+  
