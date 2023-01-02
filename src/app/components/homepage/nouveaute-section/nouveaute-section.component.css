@@ -68,6 +68,11 @@
     right: 30px;
 }
 
+.pull:hover .text-arrow, .tshirt:hover .text-arrow, .jeans:hover .text-arrow, .promotion:hover .text-arrow, .promotion:hover p {
+    transform: translateX(10px);
+    transition: transform 0.30s;
+}
+
 .pull .text-arrow, .tshirt .text-arrow, .jeans .text-arrow {
     color: var(--color-white);
     fill: var(--color-white);

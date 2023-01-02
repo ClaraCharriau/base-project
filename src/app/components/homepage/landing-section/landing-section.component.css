@@ -1,5 +1,7 @@
 .flex {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-arrow {
@@ -8,6 +10,16 @@
     font-weight: 700;
     gap: 15px;
 }
+
+.carre-homme:hover .text-arrow, .carre-femme:hover .text-arrow {
+    transform: translateX(10px);
+    transition: transform 0.30s;
+}
+
+.arrow-right-homepage {
+    margin-top: 5px;
+}
+
 
 
 /* HOMME - FEMME */
