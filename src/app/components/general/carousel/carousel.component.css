@@ -21,6 +21,17 @@
     object-fit: cover;
 }
 
-.previous-btn-homepage-carousel:hover, .previous-btn-homepage-carousel:hover {
+.previous-btn-homepage-carousel:hover, .next-btn-homepage-carousel:hover {
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.previous-btn-homepage-carousel:hover {
+    transform: translateX(-8px);
+    transition: transform 0.3s;
+}
+
+.next-btn-homepage-carousel:hover {
+    transform: translateX(8px);
+    transition: transform 0.3s;
 }

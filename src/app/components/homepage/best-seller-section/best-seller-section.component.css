@@ -29,20 +29,24 @@
 .black-btn {
     background-color: var(--color-black);
     color: var(--color-white);
+    transition: all 0.3s;
 }
 .white-btn {
     background-color: var(--color-white);
     color: var(--color-black);
+    transition: all 0.3s;
 }
 .white-btn:hover {
     background-color: var(--color-red);
     color: var(--color-white);
     border: solid var(--color-red) 1px;
+    transition: all 0.3s;
 }
 .black-btn:hover {
     background-color: var(--color-red);
     color: var(--color-white);
     border: solid var(--color-red) 1px;
+    transition: all 0.3s;
 }
 
 /* Carousel */

@@ -19,6 +19,7 @@
     text-align: end;
     font-weight: 700;
     gap: 15px;
+    transition: all 0.3s;
 }
 
 /* NOUVEAUTÉ */
@@ -43,7 +44,7 @@
 }
 
 .tshirt {
-    background-image: url("src/assets/homepage-images/keagan-henman-Won79_9oUEk-unsplash.jpg");
+    background-image: url("src/assets/homepage-images/keagan-henman-Won79_9oUEk-unsplash.png");
     background-position: center;
     grid-column: 3;
     grid-row: 1;
@@ -66,6 +67,7 @@
     position: absolute;
     bottom: 30px;
     right: 30px;
+    transition: all 0.3s;
 }
 
 .pull:hover .text-arrow, .tshirt:hover .text-arrow, .jeans:hover .text-arrow, .promotion:hover .text-arrow, .promotion:hover p {
@@ -77,9 +79,13 @@
     color: var(--color-white);
     fill: var(--color-white);
 }
-.know-more:hover, .profite:hover {
+.profite:hover {
     color: var(--color-red);
     fill: var(--color-red);
+}
+
+.profite:hover .profite {
+    color: var(--color-red);
 }
 
 .promotion p, .profite {
@@ -117,6 +123,11 @@
     
     .text-arrow {
         gap: 2px;
+    }
+
+    .homepage-container {
+        padding: 0px 0px;
+        margin: 50px 0 0 0;
     }
 
     /* NOUVEAUTÉ */

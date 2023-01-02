@@ -4,20 +4,27 @@
     justify-content: center;
 }
 
+.homepage-container {
+    padding: 0px 60px;
+    margin: 131px 0 0 0;
+}
+
 .text-arrow {
     font-size: clamp(20px, 2vw, 28px);
     text-align: end;
     font-weight: 700;
     gap: 15px;
+    transition: all 0.3s;
 }
 
 .carre-homme:hover .text-arrow, .carre-femme:hover .text-arrow {
     transform: translateX(10px);
-    transition: transform 0.30s;
+    transition: all 0.3s;
 }
 
 .arrow-right-homepage {
     margin-top: 5px;
+    transition: all 0.3s;
 }
 
 
@@ -54,6 +61,11 @@
 }
 
 @media (max-width: 850px) {
+
+    .homepage-container {
+        padding: 0px 0px;
+        margin: 50px 0 0 0;
+    }
 
     
     /* HOMME / FEMME */
