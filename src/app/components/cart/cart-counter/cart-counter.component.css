@@ -1,0 +1,31 @@
+/* Prix quantité article */
+.decrease-items, .increase-items {
+    height: 40px;
+    width: 40px;
+    font-weight: 500;
+    font-size: 22px;
+    border: none;
+    background-color: #F4F4F4;
+}
+.decrease-items:hover, .increase-items:hover {
+    cursor: pointer;
+}
+.number-articles {
+    display: flex;
+}
+.number-articles p {
+    padding: 10px 11px;
+    background-color: #C8C8C8;
+}
+
+@media (max-width: 500px) {
+
+    .decrease-items, .increase-items {
+        height: 30px;
+        width: 30px;
+    }
+    .number-articles p {
+        padding: 5px;
+    }
+
+}

@@ -23,6 +23,13 @@ import { InstaSectionComponent } from './components/all-categories/insta-section
 import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { CartAllProductsComponent } from './components/cart/cart-all-products/cart-all-products.component';
+import { CartProductCardComponent } from './components/cart/cart-product-card/cart-product-card.component';
+import { CartTotalComponent } from './components/cart/cart-total/cart-total.component';
+import { CartPaymentInfosComponent } from './components/cart/cart-payment-infos/cart-payment-infos.component';
+import { CartPromoCodeComponent } from './components/cart/cart-promo-code/cart-promo-code.component';
+import { CartCounterComponent } from './components/cart/cart-counter/cart-counter.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +53,14 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     InstaSectionComponent,
     AllCategoriesComponent,
     HomepageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CartComponent,
+    CartAllProductsComponent,
+    CartProductCardComponent,
+    CartTotalComponent,
+    CartPaymentInfosComponent,
+    CartPromoCodeComponent,
+    CartCounterComponent
   ],
   imports: [
     BrowserModule,
