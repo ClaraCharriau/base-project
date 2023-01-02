@@ -1,0 +1,12 @@
+.homepage {
+    padding: 0px 60px;
+    margin: 20px 0 0 0;
+}
+
+@media (max-width: 850px) {
+
+    .homepage {
+        padding: 0px 25px;
+        margin: 50px 0 0 0;
+    }
+}
