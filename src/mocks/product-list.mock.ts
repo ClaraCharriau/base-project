@@ -3,7 +3,7 @@ type productSize = 'XS'|'S'|'M'|'L'|'XL'|'XXL';
 type productFit = 'près du corps' | 'oversized' | 'loose' | 'regular';
 
 export interface Product {
-    id: string;
+    id: number;
     category: string;
     reference: string;
     productSize: string;
@@ -14,6 +14,11 @@ export interface Product {
     productFit: string;
     composition: string;
     washingMaintenance: string;
+    photoOne: string;
+    altPhoto: string;
+    photoTwo: string;
+    photoThree: string;
+    photoFour: string;
 }
 
 // saison: 1 hiver/automne, 2 printemps/été
@@ -27,7 +32,7 @@ export const PRODUCTLIST: Product[] = [
 
     // PULLS
     {
-        id: '122PIPA',
+        id: 1,
         category: "pull",
         reference: 'Pull torsade chiné',
         productSize: 'XS',
@@ -37,11 +42,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull avec torsade en grossse maille chinée avec col rond. Pièce chaude de plein hiver.',
         productFit: 'oversized',
         composition: '80% laine, 10% polyester recyclé, 10% polyamide',
-        washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage à plat uniquement, repassage doux sur l'envers, nettoyage à sec autorisé."
+        washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage à plat uniquement, repassage doux sur l'envers, nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '222PATTI',
+        id: 2,
         category: "pull",
         reference: 'Pull chaussette',
         productSize: 'XS',
@@ -51,11 +61,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull chaussette en maille fine près du corps pour toutes saisons.',
         productFit: 'près du corps',
         composition: '92% polyester recyclé, 8% élasthanne',
-        washingMaintenance: "lavage à 30◦, blanchiment interdit, séchage en tambour cycle normal, repassage doux sur l'envers, nettoyage à sec autorisé."
+        washingMaintenance: "lavage à 30◦, blanchiment interdit, séchage en tambour cycle normal, repassage doux sur l'envers, nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '222CLARA',
+        id: 3,
         category: "pull",
         reference: 'Gilet oversized en 100% coton bio',
         productSize: 'XS',
@@ -65,11 +80,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Cardigan ample et court en grosses côtes.',
         productFit: 'oversized',
         composition: '100% coton bio',
-        washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé."
+        washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '122PLUME',
+        id: 4,
         category: "pull",
         reference: 'Pull maille fine chiné',
         productSize: 'XS',
@@ -79,11 +99,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull col montant en maille légère chinée.',
         productFit: 'regular',
         composition: '100% coton recyclé',
-        washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé."
+        washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '122PIA',
+        id: 5,
         category: "pull",
         reference: 'Pull en côte anglaise',
         productSize: 'XS',
@@ -93,11 +118,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull col rond en côte anglaise grosse jauge.',
         productFit: 'regular',
         composition: '90% coton bio, 10% cachemire',
-        washingMaintenance: "lavage à la main, blanchiment interdit, séchage suspendu à l'ombre, repassage à fer doux (1 point), nettoyage à sec recommandé."
+        washingMaintenance: "lavage à la main, blanchiment interdit, séchage suspendu à l'ombre, repassage à fer doux (1 point), nettoyage à sec recommandé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '122PARIS',
+        id: 6,
         category: "pull",
         reference: 'Pull en jeux de maille',
         productSize: 'XS',
@@ -107,11 +137,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull col rond en jeux de mailles diminuées.',
         productFit: 'oversized',
         composition: '100% coton bio',
-        washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé."
+        washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '222PRUNE',
+        id: 7,
         category: "pull",
         reference: 'Pull rayé multicolore',
         productSize: 'XS',
@@ -121,11 +156,16 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull col rond multicolore en maille perlée.',
         productFit: 'oversized',
         composition: '50% coton, 50% lin',
-        washingMaintenance: "lavage délicat à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé."
+        washingMaintenance: "lavage délicat à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     },
     {
-        id: '122PAULINE',
+        id: 8,
         category: "pull",
         reference: 'Pull angora ajouré',
         productSize: 'XS',
@@ -135,7 +175,12 @@ export const PRODUCTLIST: Product[] = [
         description: 'Pull angora avec détails ajourés sur les manches.',
         productFit: 'regular',
         composition: '100% angora éthique',
-        washingMaintenance: "lavage délicat à la main, blanchiment interdit, séchage à plat uniquement, repassage à fer doux (1 point), nettoyage à sec autorisé."
+        washingMaintenance: "lavage délicat à la main, blanchiment interdit, séchage à plat uniquement, repassage à fer doux (1 point), nettoyage à sec autorisé.",
+        photoOne: "",
+        altPhoto: "",
+        photoTwo: "",
+        photoThree: "",
+        photoFour: "",
 
     }
 
