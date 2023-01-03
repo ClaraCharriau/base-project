@@ -51,11 +51,11 @@ a {
 }
 
 .carre-homme {
-    background-image: url("src/assets/homepage-images/willow-kaii-unsplash.jpg");
+    background-image: url("src/assets/img/homepage-images/willow-kaii-unsplash.jpg");
     background-position: auto -20px;
 }
 .carre-femme {
-    background-image: url("src/assets/homepage-images/michal-binkiewicz-unsplash.jpg");
+    background-image: url("src/assets/img/homepage-images/michal-binkiewicz-unsplash.jpg");
     background-position: auto -50px;
 }
 

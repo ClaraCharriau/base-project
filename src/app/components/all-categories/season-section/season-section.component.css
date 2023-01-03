@@ -38,7 +38,7 @@ a {
 .polyester_recycle {
     height: 460px;
     /* CHANGEMENT */
-    background-image: url(/assets/all-categories-images/femme_polyester.png);
+    background-image: url(/assets/img/all-categories-images/femme_polyester.png);
 }
 
 /* VTMTS HIVER */
@@ -54,16 +54,16 @@ a {
 }
 
 .vtmts_soiree {
-    background-image: url(/assets/all-categories-images/femme_vetements_de_fete.png);
+    background-image: url(/assets/img/all-categories-images/femme_vetements_de_fete.png);
 }
 
 .vtmts_chauds {
-    background-image: url(/assets/all-categories-images/femme_vetements_chaud.png);
+    background-image: url(/assets/img/all-categories-images/femme_vetements_chaud.png);
 }
 
 /* COTON BIO */
 .coton_bio {
-    background-image: url(/assets/all-categories-images/femme_coton_bio.png);
+    background-image: url(/assets/img/all-categories-images/femme_coton_bio.png);
     height: 430px;
 }
 
