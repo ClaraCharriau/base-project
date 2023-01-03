@@ -187,7 +187,7 @@ export const PRODUCTLIST: Product[] = [
     // ROBES
     {
         id: 9,
-        category: "Robe",
+        category: "robe",
         reference: 'Robe bleue',
         productSize: 'XS',
         price: 100,
