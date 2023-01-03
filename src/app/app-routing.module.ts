@@ -4,6 +4,7 @@ import { AllCategoriesComponent } from './pages/all-categories/all-categories.co
 import { CartComponent } from './pages/cart/cart.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SingleCategoryComponent } from './pages/single-category/single-category.component';
 import { SingleProductComponent } from './pages/single-product/single-product.component';
 
 const routes: Routes = [
@@ -15,6 +16,9 @@ const routes: Routes = [
 
   // Page produit
   { path: 'single-product', component: SingleProductComponent },
+
+  // Page categorie
+  { path: 'single-category', component: SingleCategoryComponent },
 
   // Panier
   { path: 'cart', component: CartComponent },
