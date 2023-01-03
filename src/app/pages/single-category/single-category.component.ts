@@ -29,7 +29,7 @@ export class SingleCategoryComponent {
 
   getProductByCategory() {
     const category = this.route.snapshot.paramMap.get('category');
-    const foundProduct = this.productService.getProductByCategory(category);
+    const foundProduct = this.productService.getProductByCategory(category!);
 
     if (foundProduct) {
       this.product = foundProduct;
@@ -38,3 +38,4 @@ export class SingleCategoryComponent {
     }
 
   }
+}
