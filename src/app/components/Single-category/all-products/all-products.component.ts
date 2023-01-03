@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Product } from '../product-card/product-card.component';
+// import { Product } from '../product-card/product-card.component';
 
 @Component({
   selector: 'app-all-products',
@@ -7,6 +7,6 @@ import { Product } from '../product-card/product-card.component';
   styleUrls: ['./all-products.component.css']
 })
 export class AllProductsComponent {
-  @Input() products!: Product[];
+  // @Input() products!: Product[];
 
 }
