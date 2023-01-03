@@ -1,11 +1,12 @@
 type productStatus = 'disponible' | 'disponible uniquement en magasin' | 'indisponible en ligne' | 'en réapprovisionnement' | 'épuisé';
-// type productSize = 'XS'|'S'|'M'|'L'|'XL'|'XXL';?
+type productSize = 'XS'|'S'|'M'|'L'|'XL'|'XXL';
 type productFit = 'près du corps' | 'oversized' | 'loose' | 'regular';
 
 export interface Product {
     id: string;
+    category: string;
     reference: string;
-    // productSize: string;?
+    productSize: string;
     price: number;
     productStatus: string;
     isAvailable: boolean;
@@ -22,11 +23,14 @@ export interface Product {
 
 export const PRODUCTLIST: Product[] = [
 
-    // pulls dans l'ordre de lecture sur la page
+
+
+    // PULLS
     {
         id: '122PIPA',
+        category: "pull",
         reference: 'Pull torsade chiné',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 69.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -38,8 +42,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '222PATTI',
+        category: "pull",
         reference: 'Pull chaussette',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 39.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -51,8 +56,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '222CLARA',
+        category: "pull",
         reference: 'Gilet oversized en 100% coton bio',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 59.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -64,8 +70,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '122PLUME',
+        category: "pull",
         reference: 'Pull maille fine chiné',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 29.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -77,8 +84,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '122PIA',
+        category: "pull",
         reference: 'Pull en côte anglaise',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 79.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -90,8 +98,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '122PARIS',
+        category: "pull",
         reference: 'Pull en jeux de maille',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 79.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -103,8 +112,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '222PRUNE',
+        category: "pull",
         reference: 'Pull rayé multicolore',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 59.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -116,8 +126,9 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: '122PAULINE',
+        category: "pull",
         reference: 'Pull angora ajouré',
-        // productSize: 'XS';?
+        productSize: 'XS',
         price: 89.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -127,8 +138,6 @@ export const PRODUCTLIST: Product[] = [
         washingMaintenance: "lavage délicat à la main, blanchiment interdit, séchage à plat uniquement, repassage à fer doux (1 point), nettoyage à sec autorisé."
 
     }
-
-
 
 
 
