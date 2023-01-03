@@ -37,21 +37,21 @@
 }
 
 .pull {
-    background-image: url("src/assets/homepage-images/pexels-vlada-karpovich-5603009.jpg");
+    background-image: url("src/assets/img/homepage-images/pexels-vlada-karpovich-5603009.jpg");
     background-position: auto -200px;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
 
 .tshirt {
-    background-image: url("src/assets/homepage-images/keagan-henman-Won79_9oUEk-unsplash.png");
+    background-image: url("src/assets/img/homepage-images/keagan-henman-Won79_9oUEk-unsplash.png");
     background-position: center;
     grid-column: 3;
     grid-row: 1;
 }
 
 .jeans {
-    background-image: url("src/assets/homepage-images/maude-frederique-lavoie-EDSTj4kCUcw-unsplash.jpg");
+    background-image: url("src/assets/img/homepage-images/maude-frederique-lavoie-EDSTj4kCUcw-unsplash.jpg");
     background-position: auto 10px;
     grid-column: 4;
     grid-row: 1 / span 2;
