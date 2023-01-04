@@ -34,7 +34,7 @@ export class SingleCategoryComponent {
     if (foundProduct) {
       this.product = foundProduct;
     } else {
-      this.router.navigate(['**']);
+      this.router.navigate(['/']);
     }
 
   }
