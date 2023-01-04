@@ -14,3 +14,16 @@ ul {
     justify-content: flex-start; 
 }
   
+
+/* Toggle glisse vers le bas */
+.toggle-icon {
+    transition: transform 0.30s;
+    transform: rotate(-180deg);
+    margin-bottom: -4px;
+}
+
+.toggle-icon:hover  {
+    cursor: pointer;
+    transition: transform 0.30s;
+    transform: rotate(0deg);
+}
