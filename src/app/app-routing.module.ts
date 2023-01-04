@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'all-categories/:category', component: SingleCategoryComponent },
 
   // Page produit
-  { path: 'all-categories/:category/:id', component: SingleProductComponent },
+  { path: 'products/:id', component: SingleProductComponent },
 
   // Panier
   { path: 'cart', component: CartComponent },
