@@ -37,9 +37,6 @@
 
 @media (max-width: 850px) {
 
-    .basket-container {
-        gap: 30px;
-    }
 
     .basket {
         padding: 0px 25px;
@@ -47,6 +44,7 @@
 
     .basket-container {
         flex-direction: column;
+        gap: 30px;
     }
 
     .right-side-order {

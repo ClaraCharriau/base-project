@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { Product } from 'src/mocks/product-list.mock';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Product, PRODUCTLIST } from 'src/mocks/product-list.mock';
 
 @Component({
   selector: 'app-all-products',
@@ -7,7 +8,14 @@ import { Product } from 'src/mocks/product-list.mock';
   styleUrls: ['./all-products.component.css']
 })
 export class AllProductsComponent {
-  @Input() products!: Product[];
+
+  productList: Product[] = PRODUCTLIST;
+
+  category = this.route.snapshot.paramMap.get('category');
+
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
 
 }
