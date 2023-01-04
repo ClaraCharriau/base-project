@@ -74,7 +74,7 @@ export const PRODUCTLIST: Product[] = [
     {
         id: 3,
         category: "Pulls",
-        reference: 'Gilet oversized en 100% coton bio',
+        reference: 'Gilet oversized 100% coton bio',
         productSize: 'XS',
         price: 59.90,
         productStatus: 'disponible',
