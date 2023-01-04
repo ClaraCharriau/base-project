@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartProduct, CartService } from 'src/app/service/cart/cart.service';
 
 @Component({
   selector: 'app-cart-all-products',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart-all-products.component.css']
 })
 export class CartAllProductsComponent {
+
+  cart: CartProduct[] = [];
+
+  constructor(public cartService: CartService) {}
 
 }
