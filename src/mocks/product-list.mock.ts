@@ -4,6 +4,8 @@ type productFit = 'près du corps' | 'oversized' | 'loose' | 'regular';
 
 export interface Product {
     id: number;
+
+    // Bien mettre une majuscule et au pluriel pour le titre de la page single-catégory
     category: string;
     reference: string;
     productSize: string;
@@ -33,7 +35,7 @@ export const PRODUCTLIST: Product[] = [
     // PULLS
     {
         id: 1,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull torsade chiné',
         productSize: 'XS',
         price: 69.90,
@@ -52,7 +54,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 2,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull chaussette',
         productSize: 'XS',
         price: 39.90,
@@ -71,7 +73,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 3,
-        category: "pull",
+        category: "Pulls",
         reference: 'Gilet oversized en 100% coton bio',
         productSize: 'XS',
         price: 59.90,
@@ -90,7 +92,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 4,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull maille fine chiné',
         productSize: 'XS',
         price: 29.90,
@@ -109,7 +111,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 5,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull en côte anglaise',
         productSize: 'XS',
         price: 79.90,
@@ -128,7 +130,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 6,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull en jeux de maille',
         productSize: 'XS',
         price: 79.90,
@@ -147,7 +149,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 7,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull rayé multicolore',
         productSize: 'XS',
         price: 59.90,
@@ -166,7 +168,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 8,
-        category: "pull",
+        category: "Pulls",
         reference: 'Pull angora ajouré',
         productSize: 'XS',
         price: 89.90,
@@ -187,7 +189,7 @@ export const PRODUCTLIST: Product[] = [
     // ROBES
     {
         id: 9,
-        category: "robe",
+        category: "Robes",
         reference: 'Robe bleue',
         productSize: 'XS',
         price: 100,

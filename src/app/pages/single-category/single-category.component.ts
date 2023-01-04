@@ -5,8 +5,8 @@ import { Product } from 'src/mocks/product-list.mock';
 
 export interface Link {
   name: string;
-  favicon: string;
 }
+
 @Component({
   selector: 'app-single-category',
   templateUrl: './single-category.component.html',
