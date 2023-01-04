@@ -45,7 +45,7 @@ export const PRODUCTLIST: Product[] = [
         productFit: 'oversized',
         composition: '80% laine, 10% polyester recyclé, 10% polyamide',
         washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage à plat uniquement, repassage doux sur l'envers, nettoyage à sec autorisé.",
-        photoOne: "src/assets/img/products-images/femme/pull/pull-femme-vert/product1.png",
+        photoOne: "/assets/img/products-images/femme/pull/pull-femme-vert/product1.png",
         altPhoto: "",
         photoTwo: "",
         photoThree: "",
