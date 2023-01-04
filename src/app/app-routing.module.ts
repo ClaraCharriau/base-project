@@ -14,20 +14,18 @@ const routes: Routes = [
   // Toutes les catégories
   { path: 'all-categories', component: AllCategoriesComponent },
 
-  // Page produit
-  { path: 'single-product', component: SingleProductComponent },
-
   // Page categorie
-  // { path: 'single-category', component: SingleCategoryComponent },
+  { path: 'all-categories/:category', component: SingleCategoryComponent },
 
-  { path: 'all-categories/:category', component: SingleCategoryComponent},
+  // Page produit
+  { path: 'all-categories/:category/:id', component: SingleProductComponent },
 
   // Panier
   { path: 'cart', component: CartComponent },
 
   // Page 404
   { path: 'not-found', component: NotFoundComponent },
-  { path: '**', redirectTo: 'not-found'}
+  { path: '**', redirectTo: 'not-found' }
 ]
 
 @NgModule({
