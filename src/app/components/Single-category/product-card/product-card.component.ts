@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Product } from 'src/mocks/product-list.mock';
-import { Carre } from '../../general/carre-colors/carre-colors.component';
-
+// import { Carre } from '../../general/carre-colors/carre-colors.component';
 
 
 @Component({
@@ -11,9 +10,9 @@ import { Carre } from '../../general/carre-colors/carre-colors.component';
 })
 export class ProductCardComponent {
 
-  @Input() products!: Product[];
+  @Input() item!: Product;
   
-  @Input() carre!: Carre[] 
+  // @Input() carre!: Carre[] 
 
 }
   

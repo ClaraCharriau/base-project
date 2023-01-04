@@ -1,6 +1,6 @@
-type productStatus = 'disponible' | 'disponible uniquement en magasin' | 'indisponible en ligne' | 'en réapprovisionnement' | 'épuisé';
-type productSize = 'XS'|'S'|'M'|'L'|'XL'|'XXL';
-type productFit = 'près du corps' | 'oversized' | 'loose' | 'regular';
+type ProductStatus = 'disponible' | 'disponible uniquement en magasin' | 'indisponible en ligne' | 'en réapprovisionnement' | 'épuisé';
+type ProductSize = 'XS'|'S'|'M'|'L'|'XL'|'XXL';
+type ProductFit = 'près du corps' | 'oversized' | 'loose' | 'regular';
 
 export interface Product {
     id: number;
@@ -8,12 +8,12 @@ export interface Product {
     // Bien mettre une majuscule et au pluriel pour le titre de la page single-catégory
     category: string;
     reference: string;
-    productSize: string;
+    productSize: ProductSize;
     price: number;
-    productStatus: string;
+    productStatus: ProductStatus;
     isAvailable: boolean;
     description: string;
-    productFit: string;
+    productFit: ProductFit;
     composition: string;
     washingMaintenance: string;
     photoOne: string;
