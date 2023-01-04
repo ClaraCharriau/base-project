@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from 'src/app/service/products/products.service';
-import { Product } from 'src/mocks/product-list.mock';
+import { Product, PRODUCTLIST } from 'src/mocks/product-list.mock';
 
 @Component({
   selector: 'app-single-product',
@@ -11,6 +11,7 @@ import { Product } from 'src/mocks/product-list.mock';
 export class SingleProductComponent {
 
   product?: Product;
+  productsList: Product[] = PRODUCTLIST;
 
   constructor(
     private route: ActivatedRoute,
