@@ -1,7 +1,5 @@
-<p>all-products works!</p>
-
-<div class="productList flex">
-    <ng-container *ngFor="let product of products">
-        <app-product-card *ngIf="product.isAvailable" [products]="products"></app-product-card>
+<section>
+    <ng-container *ngFor="let item of productList">
+        <app-product-card *ngIf="item.isAvailable && item.category === category"></app-product-card>
     </ng-container>
-</div>
+</section>

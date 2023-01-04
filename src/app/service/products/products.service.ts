@@ -9,8 +9,8 @@ export class ProductsService {
   constructor() { }
 
   getProducts(): Product[] {
-		return PRODUCTLIST;
-	}
+    return PRODUCTLIST;
+  }
 
   // Retourne les produits d'une catégorie
   getProductByCategory(category: string): Product | undefined {
@@ -18,10 +18,9 @@ export class ProductsService {
   }
 
   // Retourne un seul produit selon l'id
-	getProductById(id: number): Product | undefined {
-		return PRODUCTLIST.find(product => product.id === id);
-	}
-
+  getProductById(id: number): Product | undefined {
+    return PRODUCTLIST.find(product => product.id === id);
+  }
 
 
 }
