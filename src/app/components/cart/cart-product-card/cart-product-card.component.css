@@ -80,6 +80,7 @@
     /* Hauteur des articles */
     .basket-desc-article, .basket-article-item-right, .basket-miniature-article {
         height: 100px;
+        width: auto;
     }
 
 }

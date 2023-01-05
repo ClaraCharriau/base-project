@@ -1,9 +1,9 @@
 <div class="basket-article-item flex">
     <!-- Image et description de l'article -->
     <div class="basket-article-item-left flex">
-        <img class="basket-miniature-article" src="" alt="">
+        <img class="basket-miniature-article" src="{{ cartProduct.product.photoOne }}" alt="">
         <div class="flex column basket-desc-article">
-        <p class="basket-article-name">Veste noire</p>
+        <p class="basket-article-name"> {{ cartProduct.product.reference }}</p>
         <p class="basket-article-description">Couleur : noir<br>Taille : L</p>
     </div>
 
@@ -11,10 +11,10 @@
     <!-- Prix - quantité - effacer -->
     <div class="basket-article-item-right flex column">
         <!-- Prix -->
-        <p class="basket-price">59,00€</p>
+        <p class="basket-price">{{ cartProduct.product.price }}</p>
 
         <!-- Ajouter / Retirer un article -->
-        <app-cart-counter></app-cart-counter>
+        <app-cart-counter [cartProduct]="cartProduct"></app-cart-counter>
 
         <!-- Poubelle -->
         <svg class="feather feather-trash" fill="none" height="20" stroke="currentColor"
