@@ -12,4 +12,12 @@ export class CartAllProductsComponent {
 
   constructor(public cartService: CartService) {}
 
+  ngOnInit() {
+    this.getCart();
+  }
+  
+  getCart() {
+    this.cart = this.cartService.getCart();
+  }
+
 }

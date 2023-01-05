@@ -18,7 +18,6 @@ export class CartService {
 
   constructor(private productsService: ProductsService) { }
 
-
   // Création d'un panier 'cart'
   private createCart() {
     const newCart = JSON.stringify([]);
@@ -31,6 +30,7 @@ export class CartService {
 
     // On vérifie s'il existe, et on le retourne converti en objet avec .parse
     if (cart) {
+      console.log(cart);
       return JSON.parse(cart);
     } else {
       this.createCart();
@@ -47,11 +47,33 @@ export class CartService {
   addProductToCart(cartProduct: CartProduct) {
 
     const cart = this.getCart();
-    cart.push(cartProduct);
+
+    // Est-ce que le produit existe déjà dans le panier ?
+    const existingProduct = cart.find((product: CartProduct) => product.product.id === cartProduct.product.id);
+
+
+    if (existingProduct) {
+
+      // S'il existe, on récupère son id / index
+      const cartProductId = cart.indexOf(existingProduct);
+      // on incrémente sa quantité
+      cart[cartProductId].quantity += cartProduct.quantity;
+
+    } else {
+
+      // S'il n'existe pas on l'ajoute
+      cart.push(cartProduct);
+
+    }
 
     // et enregistre le panier
     this.saveCart(cart);
 
+    // Plus tard on ajoutera le calcul du total et la quantité de produit (voir méthode après)
+    // this.getCartTotal();
+    // this.getProductQuantity();
+
   }
+
 
 }
