@@ -17,7 +17,6 @@ export interface Product {
     composition: string;
     washingMaintenance: string;
     photoOne: string;
-    altPhoto: string;
     photoTwo: string;
     photoThree: string;
     photoFour: string;
@@ -46,7 +45,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '80% laine, 10% polyester recyclé, 10% polyamide',
         washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage à plat uniquement, repassage doux sur l'envers, nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-vert/product1.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -65,7 +63,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '92% polyester recyclé, 8% élasthanne',
         washingMaintenance: "lavage à 30◦, blanchiment interdit, séchage en tambour cycle normal, repassage doux sur l'envers, nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-kaki/product2.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -74,7 +71,7 @@ export const PRODUCTLIST: Product[] = [
     {
         id: 3,
         category: "Pulls",
-        reference: 'Gilet oversized en 100% coton bio',
+        reference: 'Gilet oversized 100% coton bio',
         productSize: 'XS',
         price: 59.90,
         productStatus: 'disponible',
@@ -84,7 +81,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '100% coton bio',
         washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01.png",
-        altPhoto: "Gilet oversized blanc",
         photoTwo: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_02.png",
         photoThree: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_03.png",
         photoFour: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_04.png",
@@ -103,7 +99,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '100% coton recyclé',
         washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-bleu/product4.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -122,7 +117,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '90% coton bio, 10% cachemire',
         washingMaintenance: "lavage à la main, blanchiment interdit, séchage suspendu à l'ombre, repassage à fer doux (1 point), nettoyage à sec recommandé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-bleu-clair/product5.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -141,7 +135,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '100% coton bio',
         washingMaintenance: "lavage délicat à 30◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-orange/product6.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -160,7 +153,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '50% coton, 50% lin',
         washingMaintenance: "lavage délicat à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-arc-en-ciel/product7.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -179,7 +171,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '100% angora éthique',
         washingMaintenance: "lavage délicat à la main, blanchiment interdit, séchage à plat uniquement, repassage à fer doux (1 point), nettoyage à sec autorisé.",
         photoOne: "/assets/img/products-images/femme/pull/pull-femme-blanc-2/product8.png",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",
@@ -200,7 +191,6 @@ export const PRODUCTLIST: Product[] = [
         composition: '100% angora éthique',
         washingMaintenance: "lavage délicat à la main, blanchiment interdit, séchage à plat uniquement, repassage à fer doux (1 point), nettoyage à sec autorisé.",
         photoOne: "",
-        altPhoto: "",
         photoTwo: "",
         photoThree: "",
         photoFour: "",

@@ -1,9 +1,9 @@
 <section class="description-produit">
 
-    <div class="flexboxspacebetween">
+    <div class="flexboxspacebetween" >
 
         <!-- Nom article -->
-        <h2>Gilet oversize blanc 100% laine</h2>
+        <h2>{{product.reference}}</h2>
 
         <!-- Ajouter au favoris -->
         <a href="#"><svg class="heart-wishlist-icon" height="30"
@@ -17,7 +17,7 @@
     </div>
 
     <!-- Prix -->
-    <p class="price">19,99 €</p>
+    <p class="price">{{product.price | number: '1.0-2' | currency: 'EUR' }} </p>
 
     <!-- Choix de couleur & avis ☆ -->
     <div class="flexboxspacebetween">
@@ -53,7 +53,7 @@
     <a class="dispo-magasin" href="#"><b>Vérifiez la disponibilité en magasin</b></a>
 
     <!-- Détails sur le produit -->
-    <app-product-specs></app-product-specs>
+    <app-product-specs [product]="product"></app-product-specs>
 
     <!-- Echelle de taille -->
     <app-size-guide></app-size-guide>

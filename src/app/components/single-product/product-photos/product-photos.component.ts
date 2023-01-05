@@ -1,12 +1,5 @@
-import { Component } from '@angular/core';
-
-interface ProductImage {
-  alternativetext: string;
-  photoone: string;
-  phototwo: string;
-  photothree: string;
-  photofour: string;
-}
+import { Component, Input } from '@angular/core';
+import { Product } from 'src/mocks/product-list.mock';
 
 @Component({
   selector: 'app-product-photos',
@@ -15,30 +8,30 @@ interface ProductImage {
 })
 export class ProductPhotosComponent {
 
-  pullImage: ProductImage = {
-    alternativetext: "Pull femme",
-    photoone: "./assets/products-images/pull-femme-blanc/pull_blanc_01.png",
-    phototwo: "./assets/products-images/pull-femme-blanc/pull_blanc_02.png",
-    photothree: "./assets/products-images/pull-femme-blanc/pull_blanc_03.png",
-    photofour: "./assets/products-images/pull-femme-blanc/pull_blanc_04.png",
-  };
+@Input() product!:Product;
 
-  image: any = this.pullImage.photoone;
+ 
+image : string | undefined;
 
+
+ngOnInit() {
+  this.image = this.product.photoOne;
+
+} 
   firstPhoto() {
-    this.image = this.pullImage.photoone;
+    this.image = this.product.photoOne;
   }
 
   secondPhoto() {
-    this.image = this.pullImage.phototwo;
+    this.image = this.product.photoTwo;
   }
 
   thirdPhoto() {
-    this.image = this.pullImage.photothree;
+    this.image = this.product.photoThree;
   }
 
   fourthPhoto() {
-    this.image = this.pullImage.photofour;
+    this.image = this.product.photoFour;
   }
 
 

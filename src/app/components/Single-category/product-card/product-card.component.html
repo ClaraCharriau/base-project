@@ -1,9 +1,9 @@
-<article>
+<article class="product-card">
     <a routerLink="/products/{{ item.id }}">
-        <img src="{{item.photoOne}}" alt="{{item.altPhoto}}">
+        <img src="{{item.photoOne}}" alt="Image de {{item.reference}}">
     </a>
     
-    <p>{{item.reference}}</p>
+    <p class="product-name">{{item.reference}}</p>
     <p> {{item.price}}€ </p>
     
     <!-- <app-carre-colors [colorOne]="colorOne"> </app-carre-colors> -->
