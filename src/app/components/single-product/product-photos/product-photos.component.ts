@@ -11,9 +11,13 @@ export class ProductPhotosComponent {
 @Input() product!:Product;
 
  
+image : string | undefined;
 
-  image: any = this.product.photoOne;
 
+ngOnInit() {
+  this.image = this.product.photoOne;
+
+} 
   firstPhoto() {
     this.image = this.product.photoOne;
   }

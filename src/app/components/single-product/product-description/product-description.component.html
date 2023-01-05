@@ -17,7 +17,7 @@
     </div>
 
     <!-- Prix -->
-    <p class="price">{{product.price}} €</p>
+    <p class="price">{{product.price | number: '1.0-2' | currency: 'EUR' }} </p>
 
     <!-- Choix de couleur & avis ☆ -->
     <div class="flexboxspacebetween">
