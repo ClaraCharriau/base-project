@@ -14,10 +14,15 @@ export class CartAllProductsComponent {
 
   ngOnInit() {
     this.getCart();
+    this.cart = this.cartService.getCart();
   }
   
   getCart() {
     this.cart = this.cartService.getCart();
   }
-
+  removeProduct(index:number){
+    this.cartService.removeProduct(index);
+    this.getCart();
+    
+  }
 }
