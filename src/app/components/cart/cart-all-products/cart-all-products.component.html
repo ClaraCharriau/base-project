@@ -1,4 +1,3 @@
-<ul class="articles-list">
-    <li><app-cart-product-card></app-cart-product-card></li>
-    
+<ul class="articles-list" >
+    <li *ngFor="let cartProduct of cart"><app-cart-product-card [cartProduct]="cartProduct"></app-cart-product-card></li>
 </ul>
