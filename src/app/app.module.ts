@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +37,11 @@ import { NouveauteSectionComponent } from './components/homepage/nouveaute-secti
 import { BestSellerSectionComponent } from './components/homepage/best-seller-section/best-seller-section.component';
 import { EngagementsSectionComponent } from './components/homepage/engagements-section/engagements-section.component';
 import { CarouselComponent } from './components/general/carousel/carousel.component';
+import { PaymentComponent } from './pages/payment/payment.component';
+import { PaymentFormComponent } from './components/payment/payment-form/payment-form.component';
+import { PaymentRecapComponent } from './components/payment/payment-recap/payment-recap.component';
+import { PaymentTotalComponent } from './components/payment/payment-total/payment-total.component';
+
 
 @NgModule({
   declarations: [
@@ -72,11 +78,16 @@ import { CarouselComponent } from './components/general/carousel/carousel.compon
     NouveauteSectionComponent,
     BestSellerSectionComponent,
     EngagementsSectionComponent,
-    CarouselComponent
+    CarouselComponent,
+    PaymentComponent,
+    PaymentFormComponent,
+    PaymentRecapComponent,
+    PaymentTotalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -226,7 +226,7 @@ export const PRODUCTLIST: Product[] = [
     {
         id: 12,
         category: 'Tops',
-        reference: 'T-shirt rose manche extra large',
+        reference: 'T-shirt rose extra large',
         productSize: 'L',
         price: 20.00,
         productStatus: 'disponible',
