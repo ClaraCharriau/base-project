@@ -25,16 +25,15 @@ export class CartService {
   }
 
   // Vérifie si le panier existe et le crée s’il n’existe pas
-  getCart() {
+  getCart(): CartProduct[] {
     const cart = localStorage.getItem('cart');
 
     // On vérifie s'il existe, et on le retourne converti en objet avec .parse
     if (cart) {
-      console.log(cart);
       return JSON.parse(cart);
     } else {
       this.createCart();
-      this.getCart();
+      return this.getCart();
     }
   }
 
@@ -74,6 +73,22 @@ export class CartService {
     // this.getProductQuantity();
 
   }
+  
+  removeProduct(index:number){
+    // Récupèrer panier
+    const cart = this.getCart();
+    // supprimer à l'aide de .splice et l'index passé en argument
+    cart.splice(index,1);
+  
+    // Ensuite, on enregistrera le nouveau pannier dans le localStorage , on recalculera le total et le nombre de produits
+    // localStorage.setItem('cart',JSON.stringify(cart))
+    
+    // enregistrer le panier
+    this.saveCart(cart);
 
+    // this.getCartTotal();
+    // this.getProductQuantity();
+  
+  }
 
 }

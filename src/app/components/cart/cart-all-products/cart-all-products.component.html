@@ -1,3 +1,5 @@
 <ul class="articles-list" >
-    <li *ngFor="let cartProduct of cart"><app-cart-product-card [cartProduct]="cartProduct"></app-cart-product-card></li>
+    <li *ngFor="let cartProduct of cart; let index = index">
+        <app-cart-product-card [cartProduct]="cartProduct" [index]="index" (updateCart)="getCart()"></app-cart-product-card>
+    </li>
 </ul>
