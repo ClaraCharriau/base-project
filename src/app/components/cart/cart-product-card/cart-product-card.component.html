@@ -1,0 +1,27 @@
+<div class="basket-article-item flex">
+    <!-- Image et description de l'article -->
+    <div class="basket-article-item-left flex">
+        <img class="basket-miniature-article" src="{{ cartProduct.product.photoOne }}" alt="">
+        <div class="flex column basket-desc-article">
+        <p class="basket-article-name"> {{ cartProduct.product.reference }}</p>
+        <p class="basket-article-description">Couleur : noir<br>Taille : L</p>
+    </div>
+
+    </div>
+    <!-- Prix - quantité - effacer -->
+    <div class="basket-article-item-right flex column">
+        <!-- Prix -->
+        <p class="basket-price">{{ cartProduct.product.price | currency:'€': 'code' : '1.0-0' :'fr' }}</p>
+
+        <!-- Ajouter / Retirer un article -->
+        <app-cart-counter [cartProduct]="cartProduct"></app-cart-counter>
+
+        <!-- Poubelle -->
+        <svg (click)="removeProduct()" class="feather feather-trash" fill="none" height="20" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <polyline points="3 6 5 6 21 6" />
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+        </svg>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+/* GENERAL  */
+.description-produit {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.flexboxspacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FONT SIZE  */
+h2 {
+    font-size: clamp(24px, 3vw, 20px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: clamp(12px, 3vw, 30px);
+    font-weight: bold;
+}
+
+.text-description {
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.dispo-magasin {
+    color: var(--color-black);
+    text-underline-offset: 3px;
+    font-size: clamp(10px, 3vw, 20px); 
+}
+.dispo-magasin:hover {
+    color: var(--color-red);
+}
+
+/* Bouton wish-list */
+.heart-wishlist-icon:hover {
+    fill: var(--color-red)
+}
+
+
+/* Bouton panier */
+.panier {
+    background: var(--color-black);
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    gap: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+.panier:hover {
+    background-color: var(--color-red);
+}
+
+.panier svg {
+    fill: white;
+    margin-bottom: 2px;
+}
+
+/* En attendant le composant couleur */
+.color-clothes {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(192, 192, 192);
+    border: none;
+    margin-right: 5px;
+}
+
+/* MARGIN CLASSES  */
+.top-margin {
+    margin-top: 15px;
+}

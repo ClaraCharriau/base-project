@@ -1,0 +1,69 @@
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+#categorie_femme {
+    padding: 0 60px;
+}
+
+
+#categorie_femme h3 {
+    font-size: clamp(23px, 3vw, 40px);
+    color: white;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+}
+
+/* MARGIN between div */
+.margin_btw_div {
+    margin: 100px auto;
+}
+
+/* Background image parametres */
+.bg-img_param {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* POLYESTER RECYCLÉ */
+.polyester_recycle {
+    height: 460px;
+    /* CHANGEMENT */
+    background-image: url(/assets/img/all-categories-images/femme_polyester.png);
+}
+
+/* VTMTS HIVER */
+.vetements_hiver {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px
+}
+
+.vtmts_hiver_dim {
+    width: 100%;
+    height: 430px;
+}
+
+.vtmts_soiree {
+    background-image: url(/assets/img/all-categories-images/femme_vetements_de_fete.png);
+}
+
+.vtmts_chauds {
+    background-image: url(/assets/img/all-categories-images/femme_vetements_chaud.png);
+}
+
+/* COTON BIO */
+.coton_bio {
+    background-image: url(/assets/img/all-categories-images/femme_coton_bio.png);
+    height: 430px;
+}
+

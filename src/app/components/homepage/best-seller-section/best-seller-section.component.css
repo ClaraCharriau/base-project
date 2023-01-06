@@ -1,0 +1,84 @@
+.flex {
+    display: flex;
+}
+
+.homepage-container {
+    padding: 0px 60px;
+    margin: 131px 0 0 0;
+}
+
+/* Style des h2 */
+.homepage-title {
+    font-size: 28px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* MEILLEURES VENTES */
+
+.homepage-button {
+    border: solid var(--color-black) 1px;
+    padding: 5px 35px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.tri-btn {
+    gap: 35px;
+}
+
+.black-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transition: all 0.3s;
+}
+.white-btn {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: all 0.3s;
+}
+.white-btn:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: solid var(--color-red) 1px;
+    transition: all 0.3s;
+}
+.black-btn:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: solid var(--color-red) 1px;
+    transition: all 0.3s;
+}
+
+/* Carousel */
+.carousel-meilleures-ventes {
+    margin-top: 39px;
+    justify-content: center;
+    gap: 38px;
+}
+
+
+/********* MEDIA QUERIES ***********/
+
+
+@media (max-width: 850px) {
+
+    .homepage-title {
+        margin-bottom: 25px;
+    }
+
+    .homepage-container {
+        padding: 0px 25px;
+        margin: 50px 0 0 0;
+    }
+    
+
+    /* MEILLEURES VENTES */
+    .tri-btn {
+        justify-content: center;
+    }
+    .homepage-button {
+        padding: 5px 10px;
+    }
+
+  
+}

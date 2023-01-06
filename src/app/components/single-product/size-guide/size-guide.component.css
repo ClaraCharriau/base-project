@@ -1,0 +1,39 @@
+.flexboxspacebetween {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.descproduit {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: 'Inter', sans-serif;
+}
+
+.scale-box {
+    position: relative;
+}
+
+.scale {
+    border: 1px solid var(--color-black);
+    margin: 10px 0;
+}
+
+.size-dot {
+    position: absolute;
+    bottom: -7px;
+    width: 15px;
+}
+
+.petit {
+    right: 100%;
+}
+
+.impeccable {
+    right: 50%;
+}
+
+.grand {
+    left: 100%;
+}

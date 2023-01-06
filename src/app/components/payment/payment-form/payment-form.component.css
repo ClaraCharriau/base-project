@@ -1,0 +1,41 @@
+h3 {
+    font-weight: 700;
+    font-size: clamp(20px, 3vw, 25px);
+    margin: 20px 0;
+}
+
+label {
+    font-size: 15px;
+}
+
+input {
+    border-radius: 0;
+    border: solid 1px var(--color-black);
+    height: 40px;
+    padding: 10px;
+}
+
+.input-box {
+    width: 100%;
+}
+
+.input-line {
+    gap: 20px;
+}
+
+.input-line, .input-solo {
+    margin-bottom: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* En cas d'erreur dans le champs */
+.error {
+    border: 2px solid red;
+}

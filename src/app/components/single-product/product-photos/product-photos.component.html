@@ -1,0 +1,17 @@
+<section class="product-photos">
+
+    <div class="photo-miniature">
+        
+        <img (click)="firstPhoto()" src={{product.photoOne}} alt="Image de {{product.reference}}">
+        
+        <img (click)="secondPhoto()" src={{product.photoTwo}} alt="Image de {{product.reference}}">
+        
+        <img (click)="thirdPhoto()" src={{product.photoThree}} alt="Image de {{product.reference}}">
+        
+        <img (click)="fourthPhoto()" src={{product.photoFour}} alt="Image de {{product.reference}}">
+    </div>
+
+    <img [src]="image" alt="Image de {{product.reference}}">
+
+
+</section>

@@ -1,0 +1,21 @@
+<!-- ATTENTION au ngIf pour que le passage de données fonctionne!! -->
+<main class="single-product-page" *ngIf="product">
+
+    <app-fil-ariane class="fil-ariane"></app-fil-ariane>
+
+    <!-- Présentation du produit -->
+    <section class="product-display">
+
+    <app-product-photos class="single-product-photos" [product]="product" ></app-product-photos>
+
+    <app-product-description class="single-product-description" [product]="product"></app-product-description>
+
+    </section>
+
+    <!-- Récemment consultés -->
+    <app-recently-consulted class="recently-consulted"></app-recently-consulted>
+
+</main>
+
+
+

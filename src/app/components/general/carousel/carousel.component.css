@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+}
+
+.carousel-meilleures-ventes {
+    margin-top: 39px;
+    justify-content: center;
+    gap: 38px;
+}
+
+.carousel-meilleures-ventes ul {
+    gap: 60px;
+}
+
+.carousel-meilleures-ventes-clothe-slide {
+    list-style-type: none;
+}
+.carousel-meilleures-ventes-clothe-slide img {
+    height: 364px;
+    width: 428px;
+    object-fit: cover;
+}
+
+.previous-btn-homepage-carousel:hover, .next-btn-homepage-carousel:hover {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.previous-btn-homepage-carousel:hover {
+    transform: translateX(-8px);
+    transition: transform 0.3s;
+}
+
+.next-btn-homepage-carousel:hover {
+    transform: translateX(8px);
+    transition: transform 0.3s;
+}

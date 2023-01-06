@@ -1,0 +1,5 @@
+<section>
+    <ng-container *ngFor="let item of productList">
+        <app-product-card *ngIf="item.isAvailable && item.category === category" [item]="item"></app-product-card>
+    </ng-container>
+</section>
