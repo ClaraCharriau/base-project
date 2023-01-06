@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,6 +41,7 @@ import { PaymentComponent } from './pages/payment/payment.component';
 import { PaymentFormComponent } from './components/payment/payment-form/payment-form.component';
 import { PaymentRecapComponent } from './components/payment/payment-recap/payment-recap.component';
 import { PaymentTotalComponent } from './components/payment/payment-total/payment-total.component';
+
 
 @NgModule({
   declarations: [
@@ -84,7 +86,8 @@ import { PaymentTotalComponent } from './components/payment/payment-total/paymen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
