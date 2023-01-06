@@ -4,42 +4,54 @@
     <div>
         <h3>Mes informations</h3>
 
-        <!-- Adresse mail -->
-        <div>
-            <label for="client_mailAdress">Adresse mail *</label>
-            <input type="text" id="client_mailAdress" formControlName="client_mailAdress" [class.error]="validationErrors.includes('client_mailAdress')">
+        <div class="flex input-line">
+            <!-- Adresse mail -->
+            <div class="flex column input-box">
+                <label for="client_mailAdress">Adresse mail *</label>
+                <input type="text" id="client_mailAdress" formControlName="client_mailAdress"
+                    [class.error]="validationErrors.includes('client_mailAdress')">
+            </div>
+
+            <!-- mot de passe -->
+            <div class="flex column input-box">
+                <label for="client_password">Mot de passe *</label>
+                <input type="text" id="client_password" formControlName="client_password"
+                    [class.error]="validationErrors.includes('client_password')">
+            </div>
         </div>
 
-        <!-- mot de passe -->
-        <div>
-            <label for="client_password">Mot de passe *</label>
-            <input type="text" id="client_password" formControlName="client_password" [class.error]="validationErrors.includes('client_password')">
+        <div class="flex input-line">
+            <!-- Nom -->
+            <div class="flex column input-box">
+                <label for="client_lastName">Nom *</label>
+                <input type="text" id="client_lastName" formControlName="client_lastName"
+                    [class.error]="validationErrors.includes('client_lastName')">
+            </div>
+
+            <!-- Prénom -->
+            <div class="flex column input-box">
+                <label for="client_firstName">Prénom *</label>
+                <input type="text" id="client_firstName" formControlName="client_firstName"
+                    [class.error]="validationErrors.includes('client_firstName')">
+            </div>
         </div>
 
-        <!-- Nom -->
-        <div>
-            <label for="client_lastName">Nom *</label>
-            <input type="text" id="client_lastName" formControlName="client_lastName" [class.error]="validationErrors.includes('client_lastName')">
-        </div>
+        <div class="flex input-line">
+            <!-- Date de naissance -->
+            <div class="flex column input-box">
+                <label for="client_birthDate">Date de naissance *</label>
+                <input type="text" id="client_birthDate" formControlName="client_birthDate"
+                    [class.error]="validationErrors.includes('client_birthDate')">
+            </div>
 
-        <!-- Prénom -->
-        <div>
-            <label for="client_firstName">Prénom *</label>
-            <input type="text" id="client_firstName" formControlName="client_firstName" [class.error]="validationErrors.includes('client_firstName')">
-        </div>
+            <!-- Numéro de téléphone -->
+            <div class="flex column input-box">
+                <label for="client_phoneNumber">Numéro de téléphone</label>
+                <input type="text" id="client_phoneNumber" formControlName="client_phoneNumber"
+                    [class.error]="validationErrors.includes('client_phoneNumber')">
+            </div>
 
-        <!-- Date de naissance -->
-        <div>
-            <label for="client_birthDate">Date de naissance *</label>
-            <input type="text" id="client_birthDate" formControlName="client_birthDate" [class.error]="validationErrors.includes('client_birthDate')">
         </div>
-
-        <!-- Numéro de téléphone -->
-        <div>
-            <label for="client_phoneNumber">Numéro de téléphone</label>
-            <input type="text" id="client_phoneNumber" formControlName="client_phoneNumber" [class.error]="validationErrors.includes('client_phoneNumber')">
-        </div>
-
     </div>
 
     <!-- Adresse de facturation -->
@@ -48,21 +60,27 @@
         <h3>Adresse de facturation</h3>
 
         <!-- Adresse -->
-        <div>
+        <div class="flex column input-solo input-box">
             <label for="billing_adress">Adresse *</label>
-            <input type="text" id="billing_adress" formControlName="billing_adress" [class.error]="validationErrors.includes('billing_adress')">
+            <input type="text" id="billing_adress" formControlName="billing_adress"
+                [class.error]="validationErrors.includes('billing_adress')">
         </div>
 
-        <!-- Code postal -->
-        <div>
-            <label for="billing_postCode">Code postal *</label>
-            <input type="text" id="billing_postCode" formControlName="billing_postCode"[class.error]="validationErrors.includes('billing_postCode')">
-        </div>
 
-        <!-- Ville -->
-        <div>
-            <label for="billing_city">Ville *</label>
-            <input type="text" id="billing_city" formControlName="billing_city" [class.error]="validationErrors.includes('billing_city')">
+        <div class="flex input-line">
+            <!-- Code postal -->
+            <div class="flex column input-box">
+                <label for="billing_postCode">Code postal *</label>
+                <input type="text" id="billing_postCode" formControlName="billing_postCode"
+                    [class.error]="validationErrors.includes('billing_postCode')">
+            </div>
+
+            <!-- Ville -->
+            <div class="flex column input-box">
+                <label for="billing_city">Ville *</label>
+                <input type="text" id="billing_city" formControlName="billing_city"
+                    [class.error]="validationErrors.includes('billing_city')">
+            </div>
         </div>
 
 
@@ -83,22 +101,28 @@
         <h3>Paiement</h3>
 
         <!-- Numéro de carte -->
-        <div>
+        <div class="flex column input-solo input-box">
             <label for="card_number">Numéro de carte *</label>
-            <input type="text" id="card_number" formControlName="card_number" [class.error]="validationErrors.includes('card_number')">
+            <input type="text" id="card_number" formControlName="card_number"
+                [class.error]="validationErrors.includes('card_number')">
         </div>
 
-        <!-- Date d'expiration -->
-        <div>
-            <label for="card_expiration">Date d'expiration *</label>
-            <input type="text" id="card_expiration" formControlName="card_expiration" [class.error]="validationErrors.includes('card_expiration')">
+        <div class="flex input-line">
+            <!-- Date d'expiration -->
+            <div class="flex column input-box">
+                <label for="card_expiration">Date d'expiration *</label>
+                <input type="text" id="card_expiration" formControlName="card_expiration"
+                    [class.error]="validationErrors.includes('card_expiration')">
+            </div>
+
+            <!-- CVV/CVC -->
+            <div class="flex column input-box">
+                <label for="card_cvv">CVV/CVC *</label>
+                <input type="text" id="card_cvv" formControlName="card_cvv"
+                    [class.error]="validationErrors.includes('card_cvv')">
+            </div>
         </div>
 
-        <!-- CVV/CVC -->
-        <div>
-            <label for="card_cvv">CVV/CVC *</label>
-            <input type="text" id="card_cvv" formControlName="card_cvv" [class.error]="validationErrors.includes('card_cvv')">
-        </div>
 
     </div>
 
