@@ -13,7 +13,6 @@ export interface CartProduct {
 
 export class CartService {
 
-  cart = [];
   totalPrice: number = 0;
   productQuantity: number = 0;
 
@@ -31,9 +30,7 @@ export class CartService {
 
     // On vérifie s'il existe, et on le retourne converti en objet avec .parse
     if (cart) {
-      console.log(cart);
-      this.cart = JSON.parse(cart);
-      return this.cart;
+      return JSON.parse(cart);
     } else {
       this.createCart();
       return this.getCart();
@@ -76,6 +73,7 @@ export class CartService {
     // this.getProductQuantity();
 
   }
+  
   removeProduct(index:number){
     // Récupèrer panier
     const cart = this.getCart();

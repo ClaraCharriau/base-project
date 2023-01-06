@@ -17,7 +17,7 @@ export class CartAllProductsComponent {
   }
   
   getCart() {
-    this.cart = this.cartService.cart;
+    this.cart = this.cartService.getCart();
   }
   
 }
