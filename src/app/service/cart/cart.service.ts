@@ -13,6 +13,7 @@ export interface CartProduct {
 
 export class CartService {
 
+  cart = [];
   totalPrice: number = 0;
   productQuantity: number = 0;
 
@@ -25,16 +26,17 @@ export class CartService {
   }
 
   // Vérifie si le panier existe et le crée s’il n’existe pas
-  getCart() {
+  getCart(): CartProduct[] {
     const cart = localStorage.getItem('cart');
 
     // On vérifie s'il existe, et on le retourne converti en objet avec .parse
     if (cart) {
       console.log(cart);
-      return JSON.parse(cart);
+      this.cart = JSON.parse(cart);
+      return this.cart;
     } else {
       this.createCart();
-      this.getCart();
+      return this.getCart();
     }
   }
 
@@ -85,7 +87,7 @@ export class CartService {
     
     // enregistrer le panier
     this.saveCart(cart);
-    
+
     // this.getCartTotal();
     // this.getProductQuantity();
   
