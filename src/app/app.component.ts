@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 // importer ce qui suit dans app.compo.fr afin d'avoir le symbol à droite (à la française)
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { CartService } from './service/cart/cart.service';
 registerLocaleData(localeFr, 'fr');
 
 @Component({
@@ -11,4 +12,10 @@ registerLocaleData(localeFr, 'fr');
 })
 export class AppComponent {
   title = 'base-project';
+
+  constructor(private cartService: CartService) {}
+
+  ngOnInit() {
+    // this.cartService.getCart();
+  }
 }
