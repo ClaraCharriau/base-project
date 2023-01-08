@@ -5,6 +5,13 @@
     flex-direction: column;
 }
 
+/* Ligne de séparation entre les articles */
+.card-separator {
+    width: 100%;
+    border: 0.3px solid rgb(225, 225, 225);
+    margin-top: 10px;
+}
+
 /* Hauteur des articles */
 .basket-desc-article, .basket-article-item-right, .basket-miniature-article {
     height: 177px;
@@ -29,12 +36,13 @@
     gap: 60px;
 }
 
-
 /* Description article */
 .basket-article-name {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: clamp(18px, 3vw, 20px);
+    color: var(--color-black);
+    text-decoration: none;
 }
 .basket-article-description {
     font-weight: 500;
@@ -51,9 +59,20 @@
     font-size: 25px;
     align-self: flex-start;
 }
+
+/* Icone poubelle */
+.feather-trash {
+    height: 25px;
+    fill: none;
+    stroke: var(--color-black);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
 .feather-trash:hover {
     cursor: pointer;
-    color: var(--color-red);
+    stroke: var(--color-red);
 }
 
 @media (max-width: 850px) {

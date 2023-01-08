@@ -27,6 +27,11 @@ main {
 
     .product-display {
         flex-direction: column;
+        gap: 40px;
+    }
+
+    .single-product-photos {
+        max-width: none;
     }
 
 }

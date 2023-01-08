@@ -44,6 +44,7 @@ a {
     font-size: clamp(18px, 3vw, 25px);
     color: var(--color-white);
     border: none;
+    text-align: center;
 }
 .basket-order-btn a {
     color: var(--color-white);
