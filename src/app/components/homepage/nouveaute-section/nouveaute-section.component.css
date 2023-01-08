@@ -169,12 +169,16 @@
 
 @media (max-width: 500px) {
 
-    .homepage-30-promotion {
-        font-size: 70px;
+    .promotion p {
+        bottom: 60px;
     }
 
-    .promotion p, .profite {
-        line-height: 35px;
+    .homepage-30-promotion, .promotion p {
+        font-size: 30px;
+    }
+
+    .promotion .text-arrow {
+        font-size: 20px;
     }
 
 }
