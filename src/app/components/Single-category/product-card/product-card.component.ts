@@ -12,7 +12,6 @@ export class ProductCardComponent {
 
   @Input() item!: Product;
   
-  // @Input() carre!: Carre[] 
 
 }
   
