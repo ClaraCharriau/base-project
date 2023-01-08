@@ -1,7 +1,7 @@
 h3 {
     font-weight: 700;
     font-size: clamp(20px, 3vw, 25px);
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 label {
@@ -35,7 +35,19 @@ input {
     flex-direction: column;
 }
 
+.margin-top {
+    margin-top: 20px;
+}
+
 /* En cas d'erreur dans le champs */
 .error {
     border: 2px solid red;
+}
+
+@media (max-width: 850px) {
+
+    .input-line {
+        flex-direction: column;
+    }
+
 }
