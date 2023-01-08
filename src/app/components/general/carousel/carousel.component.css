@@ -1,37 +1,63 @@
+svg {
+    min-width: 40px;
+}
+
 .flex {
     display: flex;
 }
 
-.carousel-meilleures-ventes {
+.carousel {
     margin-top: 39px;
     justify-content: center;
+    align-items: center;
     gap: 38px;
 }
 
-.carousel-meilleures-ventes ul {
+.carousel ul {
     gap: 60px;
 }
 
-.carousel-meilleures-ventes-clothe-slide {
+.carousel-clothe-slide {
     list-style-type: none;
 }
-.carousel-meilleures-ventes-clothe-slide img {
-    height: 364px;
-    width: 428px;
+
+.carousel-clothe-slide img {
+    width: 20vw;
+    height: 300px;
     object-fit: cover;
 }
 
-.previous-btn-homepage-carousel:hover, .next-btn-homepage-carousel:hover {
+.previous-btn-carousel:hover,
+.next-btn-carousel:hover {
     cursor: pointer;
     transition: transform 0.3s;
 }
 
-.previous-btn-homepage-carousel:hover {
+.previous-btn-carousel:hover {
     transform: translateX(-8px);
     transition: transform 0.3s;
 }
 
-.next-btn-homepage-carousel:hover {
+.next-btn-carousel:hover {
     transform: translateX(8px);
     transition: transform 0.3s;
+}
+
+@media (max-width: 850px) {
+
+    .carousel {
+        gap: 5px;
+    }
+
+    .display-none-mobile {
+        display: none;
+    }
+
+    .carousel-clothe-slide img {
+        width: 60vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+
 }
