@@ -1,12 +1,12 @@
 
 /* Typographie */
 p {
-    font-size: clamp(10px, 3vw, 20px);
+    font-size: clamp(15px, 3vw, 20px);
     font-weight: 300;
     margin: 15px 0;
 }
 .description-details-box {
-    width: 100%;
+    max-width: 25vw;
 }
 
 .descproduit {

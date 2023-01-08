@@ -1,4 +1,4 @@
-<section class="product-photos">
+<section>
 
     <div class="photo-miniature">
         
@@ -11,7 +11,7 @@
         <img (click)="fourthPhoto()" src={{product.photoFour}} alt="Image de {{product.reference}}">
     </div>
 
-    <img [src]="image" alt="Image de {{product.reference}}">
+    <img class="main-image" [src]="image" alt="Image de {{product.reference}}">
 
 
 </section>
