@@ -1,7 +1,7 @@
 <form [formGroup]="paymentForm">
 
     <!-- Informations client -->
-    <div>
+    <div class="input-group">
         <h3>Mes informations</h3>
 
         <div class="flex input-line">
@@ -55,7 +55,7 @@
     </div>
 
     <!-- Adresse de facturation -->
-    <div>
+    <div class="input-group">
 
         <h3>Adresse de facturation</h3>
 
@@ -87,7 +87,7 @@
     </div>
 
     <!-- Livraison standard -->
-    <div>
+    <div class="input-group">
 
         <h3>Livraison standard</h3>
 
@@ -96,7 +96,7 @@
     </div>
 
     <!-- Paiement -->
-    <div>
+    <div class="input-group">
 
         <h3 class="margin-top">Paiement</h3>
 
@@ -126,6 +126,6 @@
 
     </div>
 
-    <button type="submit" (click)="onPay()">Valider l'achat</button>
+    <button (click)="onFormSubmit()" type="submit">Valider l'achat</button>
 
 </form>

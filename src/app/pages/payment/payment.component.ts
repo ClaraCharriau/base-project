@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-payment',
@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class PaymentComponent {
 
-  
+  @ViewChild('f') form!: NgForm;
+
+  public onSubmit(){
+  this.form.ngSubmit.emit();
+  }
 
 }

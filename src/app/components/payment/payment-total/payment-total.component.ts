@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from 'src/app/service/cart/cart.service';
 
 @Component({
   selector: 'app-payment-total',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./payment-total.component.css']
 })
 export class PaymentTotalComponent {
+
+  constructor(public cartService: CartService) { }
+
+  getCartTotal() {
+    this.cartService.getCartTotal();
+  }
 
 }

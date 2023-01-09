@@ -41,6 +41,8 @@ import { PaymentComponent } from './pages/payment/payment.component';
 import { PaymentFormComponent } from './components/payment/payment-form/payment-form.component';
 import { PaymentRecapComponent } from './components/payment/payment-recap/payment-recap.component';
 import { PaymentTotalComponent } from './components/payment/payment-total/payment-total.component';
+import { PaymentSuccessComponent } from './pages/payment-success/payment-success.component';
+import { PaymentFormService } from './service/payment-form/payment-form.service';
 
 
 @NgModule({
@@ -82,7 +84,8 @@ import { PaymentTotalComponent } from './components/payment/payment-total/paymen
     PaymentComponent,
     PaymentFormComponent,
     PaymentRecapComponent,
-    PaymentTotalComponent
+    PaymentTotalComponent,
+    PaymentSuccessComponent
   ],
   imports: [
     BrowserModule,
