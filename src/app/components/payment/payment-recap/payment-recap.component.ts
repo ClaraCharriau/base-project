@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { Route } from '@angular/router';
+import { PaymentFormService } from 'src/app/service/payment-form/payment-form.service';
 
 @Component({
   selector: 'app-payment-recap',

@@ -4,6 +4,7 @@ import { AllCategoriesComponent } from './pages/all-categories/all-categories.co
 import { CartComponent } from './pages/cart/cart.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { PaymentSuccessComponent } from './pages/payment-success/payment-success.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { SingleCategoryComponent } from './pages/single-category/single-category.component';
 import { SingleProductComponent } from './pages/single-product/single-product.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
 
   // Formulaire de paiement
   { path: 'payment', component: PaymentComponent},
+
+  // Confirmation de la commande
+  { path: 'payment-success', component: PaymentSuccessComponent},
 
   // Page 404
   { path: 'not-found', component: NotFoundComponent },
