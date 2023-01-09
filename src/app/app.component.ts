@@ -16,6 +16,6 @@ export class AppComponent {
   constructor(private cartService: CartService) {}
 
   ngOnInit() {
-    // this.cartService.getCart();
+   this.cartService.initCart();
   }
 }
