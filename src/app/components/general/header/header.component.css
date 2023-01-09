@@ -55,6 +55,7 @@ header {
     transition: all 0.3s;
 }
 
+
 /* Cacher les icônes qui n'apparaissent qu'en version mobile */
 .burger-icon, .search-icon, .heart-wishlist-icon, .profile-icon {
     display: none;

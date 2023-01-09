@@ -17,7 +17,11 @@ export class CartProductCardComponent {
 
   removeProduct() {
     this.cartService.removeProduct(this.index);
-    console.log('Est-ce que ca fonctione???')
     this.updateCart.emit();
+  
   }
+
+
+  
 }
+
