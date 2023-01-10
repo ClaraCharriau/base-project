@@ -30,7 +30,7 @@ export class PaymentFormComponent {
       client_firstName: [null, [Validators.required]],
       client_lastName: [null, [Validators.required]],
       client_birthDate: [null, [Validators.required]],
-      client_phoneNumber: [null, [Validators.required]],
+      client_phoneNumber: [null, [Validators.pattern(/^[0-9]\d*$/)]],
       billing_adress: [null, [Validators.required]],
       billing_postCode: [null, [Validators.required]],
       billing_city: [null, [Validators.required]],
