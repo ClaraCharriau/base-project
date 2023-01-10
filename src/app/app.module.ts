@@ -39,10 +39,9 @@ import { EngagementsSectionComponent } from './components/homepage/engagements-s
 import { CarouselComponent } from './components/general/carousel/carousel.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { PaymentFormComponent } from './components/payment/payment-form/payment-form.component';
-import { PaymentRecapComponent } from './components/payment/payment-recap/payment-recap.component';
 import { PaymentTotalComponent } from './components/payment/payment-total/payment-total.component';
 import { PaymentSuccessComponent } from './pages/payment-success/payment-success.component';
-import { PaymentFormService } from './service/payment-form/payment-form.service';
+import { ReturnInfosComponent } from './components/payment/return-infos/return-infos.component';
 
 
 @NgModule({
@@ -83,9 +82,9 @@ import { PaymentFormService } from './service/payment-form/payment-form.service'
     CarouselComponent,
     PaymentComponent,
     PaymentFormComponent,
-    PaymentRecapComponent,
     PaymentTotalComponent,
-    PaymentSuccessComponent
+    PaymentSuccessComponent,
+    ReturnInfosComponent
   ],
   imports: [
     BrowserModule,
