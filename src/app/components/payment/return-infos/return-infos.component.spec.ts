@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaymentRecapComponent } from './payment-recap.component';
+import { ReturnInfosComponent } from './return-infos.component';
 
-describe('PaymentRecapComponent', () => {
-  let component: PaymentRecapComponent;
-  let fixture: ComponentFixture<PaymentRecapComponent>;
+describe('ReturnInfosComponent', () => {
+  let component: ReturnInfosComponent;
+  let fixture: ComponentFixture<ReturnInfosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaymentRecapComponent ]
+      declarations: [ ReturnInfosComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaymentRecapComponent);
+    fixture = TestBed.createComponent(ReturnInfosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

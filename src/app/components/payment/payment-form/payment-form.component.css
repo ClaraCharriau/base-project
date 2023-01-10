@@ -15,20 +15,9 @@ input {
     padding: 10px;
 }
 
-.input-group {
-    margin-bottom: 40px;
-}
-
-.input-box {
-    width: 100%;
-}
-
-.input-line {
-    gap: 20px;
-}
-
-.input-line, .input-solo {
-    margin-bottom: 15px;
+form {
+    display: flex;
+    gap: 60px;
 }
 
 .flex {
@@ -43,12 +32,88 @@ input {
     margin-top: 20px;
 }
 
+
+/* Disposition page */
+.left-side {
+    width: 70vw;
+}
+
+.right-side {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Disposition des input */
+.input-group {
+    margin-bottom: 40px;
+}
+
+.input-box {
+    width: 100%;
+}
+
+.input-line {
+    gap: 20px;
+}
+
+.input-line,
+.input-solo {
+    margin-bottom: 15px;
+}
+
+/* Bouton Valider l'achat */
+.validation-btn {
+    background-color: var(--color-black);
+    padding: 12px 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 25px);
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.validation-btn a {
+    color: var(--color-white);
+}
+
+.validation-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-red);
+    transition: all 0.3s;
+}
+
+/* Infos clients */
+.grey-text {
+    color: grey;
+}
+
+.grey-text a {
+    color: grey;
+}
+
 /* En cas d'erreur dans le champs */
 .error {
     border: 2px solid red;
 }
 
 @media (max-width: 850px) {
+
+    form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Disposition page */
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
 
     .input-line {
         flex-direction: column;
