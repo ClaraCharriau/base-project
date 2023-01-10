@@ -23,4 +23,5 @@
 .divider-total-facturation {
     /* Barre horizontale */
     width: 80%;
+    align-self: center;
 }

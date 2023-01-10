@@ -20,6 +20,7 @@ form {
     gap: 60px;
 }
 
+
 .flex {
     display: flex;
 }
@@ -104,6 +105,11 @@ form {
 .help-error {
     font-size: 12px;
     color: red;
+}
+.asterix {
+    margin-bottom: 30px;
+    color: grey;
+    font-size: 16px;
 }
 
 @media (max-width: 850px) {

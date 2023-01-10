@@ -6,6 +6,8 @@
         <div class="input-group">
             <h3>Mes informations</h3>
 
+            <p class="asterix">Champs obligatoires *</p>
+
             <div class="flex input-line">
                 <!-- Adresse mail -->
                 <div class="flex column input-box">
@@ -18,7 +20,7 @@
                 <!-- mot de passe -->
                 <div class="flex column input-box">
                     <label for="client_password">Mot de passe *</label>
-                    <input type="text" id="client_password" placeholder="******" formControlName="client_password"
+                    <input type="password" id="client_password" placeholder="******" formControlName="client_password"
                         [class.error]="validationErrors.includes('client_password')">
                     <p class="help-error" *ngIf="validationErrors.includes('client_password')">8 caractères minimum, 1 majuscule, 1 nombre.</p>
                 </div>
@@ -82,7 +84,7 @@
                     <label for="billing_postCode">Code postal *</label>
                     <input type="text" id="billing_postCode" placeholder="93000" formControlName="billing_postCode"
                         [class.error]="validationErrors.includes('billing_postCode')">
-                        <p class="help-error" *ngIf="validationErrors.includes('billing_postCode')">Ce champ est requis.</p>
+                        <p class="help-error" *ngIf="validationErrors.includes('billing_postCode')">Code postal invalide.</p>
                 </div>
 
                 <!-- Ville -->
