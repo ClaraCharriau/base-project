@@ -1,5 +1,9 @@
-import { EventEmitter, Injectable } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Injectable } from '@angular/core';
+import { Form, FormGroup } from '@angular/forms';
+
+export interface ClientInfos {
+  submittedForm: FormGroup
+}
 
 @Injectable({
   providedIn: 'root'
@@ -7,24 +11,37 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class PaymentFormService {
 
   // Créer le conteneur pour les infos clients
-  private storeClientInfos() {
-    const newClientInfos = JSON.stringify([]);
-    localStorage.setItem('Client infos', newClientInfos);
+  private createClientStorage() {
+    const newClientStorage = JSON.stringify([]);
+    localStorage.setItem('client-storage', newClientStorage);
   }
 
   // Récupérer les infos clients
-  getClientInfos() {
+  getClientStorage() {
     // on récupère le storage des infos clients
-    const clientInfos = localStorage.getItem('Client infos');
+    const clientStorage = localStorage.getItem('client-storage');
 
     // On vérifie s'il existe, et on le retourne converti en objet avec parse
-    if (clientInfos) {
-      return JSON.parse(clientInfos);
+    if (clientStorage) {
+      return JSON.parse(clientStorage);
     } else {
-      this.storeClientInfos();
-      this.getClientInfos();
+      this.createClientStorage();
+      this.getClientStorage();
     }
   }
+
+  storeClientInfos(paymentForm: FormGroup) {
+
+    const currentClientStorage = this.getClientStorage();
+
+    // Je récupère l'objet value du FormGroup
+    currentClientStorage.push(paymentForm.value);
+
+    // le stocker en string dans localStorage
+    localStorage.setItem('client-storage', JSON.stringify(currentClientStorage));
+
+  }
+  
 
 
 }
