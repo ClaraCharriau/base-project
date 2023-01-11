@@ -23,3 +23,33 @@ button:hover {
     background-color: var(--color-red);
     cursor: pointer;
 }
+
+.not-found-image {
+    max-width : 650px;
+    height : auto;
+    }
+
+@media (max-width: 690px){
+  .not-found-image{
+    max-width : 500px;
+    height : auto;
+  }  
+
+}
+
+@media (max-width: 520px){
+    .not-found-image{
+      max-width : 400px;
+      height : auto;
+    }  
+  
+  }
+
+  @media (max-width: 420px){
+    .not-found-image{
+      max-width : 300px;
+      height : auto;
+    }  
+  
+  }
+  
