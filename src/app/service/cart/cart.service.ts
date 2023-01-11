@@ -68,9 +68,9 @@ export class CartService {
     // et enregistre le panier
     this.saveCart(cart);
 
-    // Plus tard on ajoutera le calcul du total et la quantité de produit (voir méthode après)
-    // this.getCartTotal();
-    // this.getProductQuantity();
+    
+    this.getCartTotal();
+    this.getProductQuantity();
 
   }
   
@@ -80,15 +80,50 @@ export class CartService {
     // supprimer à l'aide de .splice et l'index passé en argument
     cart.splice(index,1);
   
-    // Ensuite, on enregistrera le nouveau pannier dans le localStorage , on recalculera le total et le nombre de produits
+    // Ensuite, on enregistrera le nouveau panier dans le localStorage , on recalculera le total et le nombre de produits
     // localStorage.setItem('cart',JSON.stringify(cart))
     
     // enregistrer le panier
     this.saveCart(cart);
-
-    // this.getCartTotal();
-    // this.getProductQuantity();
-  
+    this.getCartTotal();
+    this.getProductQuantity();
   }
 
-}
+    // Fonction pour calculer le prix total du panier
+  getCartTotal():void{
+    // on récupère le prdt
+    const cart = this.getCart();
+    // On calcule le prix total
+    const total = cart.reduce((accumulator:number, currentValue: CartProduct)=>{
+      // Récupèrer directement le prdt ds les mocks
+      const product = this.productsService.getProductById(currentValue.product.id);
+      // Si le prdt n'existe pas, retournerla valeur de l'accumulator
+      if(!product)return accumulator;
+      // Sinon, retourner: accumulator + prix du prdt + sa quantité
+      return accumulator + (currentValue.quantity * product.price);
+    }, 0);
+    // Assigner valeur du total à la propriété totalCart
+    this.totalPrice = total;
+  }
+
+  // et ne s'affiche que si la page est rafraîchi...
+
+  getProductQuantity():void{
+    const cart = this.getCart();
+    const total = cart.reduce((accumulator:number, currentValue:CartProduct)=>{
+      return accumulator += currentValue.quantity;
+    }, 0);
+    this.productQuantity = total;
+  }
+
+  // Initialise le panier à l'ouverture de l'app
+  initCart(){
+    this.getCart();
+    this.getCartTotal();
+    this.getProductQuantity();
+  }
+  
+
+  }
+
+

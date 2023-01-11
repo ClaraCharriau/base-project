@@ -47,11 +47,14 @@ header {
 .top-nav a {
     font-weight: 400;
     font-size: clamp(12.5px, 1vw, 14px);
+    transition: all 0.3s;
 }
 
 .top-nav a:hover {
     color: var(--color-red);
+    transition: all 0.3s;
 }
+
 
 /* Cacher les icônes qui n'apparaissent qu'en version mobile */
 .burger-icon, .search-icon, .heart-wishlist-icon, .profile-icon {
@@ -69,6 +72,7 @@ header {
 .burger-icon:hover, .search-icon:hover, .heart-wishlist-icon:hover, .profile-icon:hover, .basket-icon:hover, .heart-wishlist-icon:hover, .basket:hover {
     fill: var(--color-red);
     color: var(--color-red);
+    transition: all 0.3s;
 }
 .profile-icon:hover, .search-icon:hover {
     stroke: var(--color-red);

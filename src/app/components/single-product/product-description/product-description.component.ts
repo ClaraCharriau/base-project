@@ -28,7 +28,8 @@ export class ProductDescriptionComponent {
         quantity: this.quantity
     }
     this.cartService.addProductToCart(cartProduct);
-    
+    this.cartService.getCartTotal();
+    this.cartService.getProductQuantity();
     }
 
 

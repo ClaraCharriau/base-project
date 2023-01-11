@@ -1,0 +1,27 @@
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* Disposition des éléments */
+.right-side-order {
+    width: 30vw;
+}
+.basket-total-facturation, .basket-delivery-info, .basket-paiements-infos, .basket-promotion-infos {
+    gap: 20px;
+}
+
+.basket-subtotal, .basket-delivery-total, .basket-total {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Facturation */
+.divider-total-facturation {
+    /* Barre horizontale */
+    width: 80%;
+    align-self: center;
+}

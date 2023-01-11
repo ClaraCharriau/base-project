@@ -44,6 +44,8 @@ a {
     font-size: clamp(18px, 3vw, 25px);
     color: var(--color-white);
     border: none;
+    text-align: center;
+    transition: all 0.3s;
 }
 .basket-order-btn a {
     color: var(--color-white);
@@ -51,4 +53,5 @@ a {
 .basket-order-btn:hover {
     cursor: pointer;
     background-color: var(--color-red);
+    transition: all 0.3s;
 }

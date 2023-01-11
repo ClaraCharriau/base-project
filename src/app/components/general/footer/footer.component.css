@@ -15,10 +15,12 @@ a {
 	text-decoration: none;
     color: var(--color-black);
     font-family: 'Mulish', sans-serif;
+    transition: all 0.3s;
 }
 
 a:hover {
     color: var(--color-red);
+    transition: all 0.3s;
 }
 
 .flex {
@@ -35,9 +37,11 @@ a:hover {
     grid-row: 1;
     justify-content: center;
     width: 30vw;
+    transition: all 0.3s;
 }
 .footer-brand-name:hover {
     color: red;
+    transition: all 0.3s;
 }
 .logo-red-dot {
     color: var(--color-red);
@@ -67,9 +71,11 @@ a:hover {
     font-size: 16px;
     display: inline;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .newsletter-btn:hover {
     background-color: var(--color-red);
+    transition: all 0.3s;
 }
 
 .input-newsletter {
@@ -93,6 +99,7 @@ a:hover {
     justify-content: center;
     grid-column: 1 / span 2;
     grid-row: 2;
+    transition: all 0.3s;
 }
 
 .social-btn a {
@@ -102,10 +109,12 @@ a:hover {
     gap: 15px;
     width: 50px;
     height: 50px;
+    transition: all 0.3s;
 }
 
 .social-btn a:hover {
-    fill: var(--color-red)
+    fill: var(--color-red);
+    transition: all 0.3s;
 }
 
 /* Pages footer */

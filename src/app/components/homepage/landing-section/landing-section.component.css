@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .flex {
@@ -20,6 +20,7 @@ a {
     font-weight: 700;
     gap: 15px;
     transition: all 0.3s;
+    fill: white;
 }
 
 .carre-homme:hover .text-arrow, .carre-femme:hover .text-arrow {
@@ -51,11 +52,11 @@ a {
 }
 
 .carre-homme {
-    background-image: url("src/assets/img/homepage-images/willow-kaii-unsplash.jpg");
+    background-image: url("src/assets/img/homepage-images/landing-homme03.jpg");
     background-position: auto -20px;
 }
 .carre-femme {
-    background-image: url("src/assets/img/homepage-images/michal-binkiewicz-unsplash.jpg");
+    background-image: url("src/assets/img/homepage-images/landing-femme03.jpeg");
     background-position: auto -50px;
 }
 
@@ -71,7 +72,6 @@ a {
         padding: 0px 0px;
         margin: 50px 0 0 0;
     }
-
     
     /* HOMME / FEMME */
     .container-homme-femme {
@@ -80,19 +80,19 @@ a {
     }
     .carre-femme, .carre-homme {
         width: 100%;
-        background-position: -11px -80px;
-    }
-    .carre-femme {
-        background-position: -11px -30px;
+        background-position: center;
     }
 
     .carre-femme .text-arrow, .carre-homme .text-arrow {
         position: absolute;
-        bottom: 22px;
-        right: 15px;
+        bottom: 30px;
+        right: 30px;
     }
     .text-arrow {
         gap: 2px;
     }
+
+
+
 
 }

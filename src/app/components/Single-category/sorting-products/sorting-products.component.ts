@@ -19,10 +19,10 @@ links: Link[] = [
     name : "STYLE",
   },
   {
-    name : "MATIERE",
+    name : "MATIÈRES",
   },
   {
-    name : "TRIER PAR",
+    name : "PRIX",
   },
 ]
 
