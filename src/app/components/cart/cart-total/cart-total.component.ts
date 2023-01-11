@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CartService } from 'src/app/service/cart/cart.service';
 import { ProductsService } from 'src/app/service/products/products.service';
 
@@ -14,6 +14,6 @@ constructor(public cartService: CartService, public product: ProductsService) { 
 
 getCartTotal() {
     this.cartService.getCartTotal();
-  }
+}
 
 }
