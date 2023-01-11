@@ -1,0 +1,24 @@
+main {
+    padding: 0px 60px;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(30px, 3vw, 45px);
+    margin-bottom: 45px;
+}
+
+p {
+    margin: 20px 0;
+    text-align: center;
+    font-size: clamp(13px, 3vw, 16px);
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,27 +1,27 @@
 <main>
 
-    <h3>Commande confirmée !</h3>
+    <h2>Commande confirmée !</h2>
 
     <p>Merci
         {{this.paymentService.currentClientStorage.client_firstName}}
-        {{this.paymentService.currentClientStorage.client_lastName}},
+        {{this.paymentService.currentClientStorage.client_lastName}} !<br>
         vous allez recevoir un mail de confirmation à
-        l'adresse suivante :</p>
+        l'adresse suivante : <strong>{{this.paymentService.currentClientStorage.client_mailAdress}}</strong></p>
 
-    <p>{{this.paymentService.currentClientStorage.client_mailAdress}}</p>
 
-    <p>Votre commande sera envoyée à l'adresse : </p>
+    <p>Votre commande sera envoyée à l'adresse : <br>
+        {{this.paymentService.currentClientStorage.billing_adress}},<br>
+        {{this.paymentService.currentClientStorage.billing_postCode}}  
+        {{this.paymentService.currentClientStorage.billing_city | uppercase }}</p>
 
-    <p>{{this.paymentService.currentClientStorage.billing_adress}},
-        {{this.paymentService.currentClientStorage.billing_city}}
-        {{this.paymentService.currentClientStorage.billing_postCode}}</p>
+        <hr>
 
-    <p>Récapitulatif de la commande</p>
+    <h3><strong>Récapitulatif de la commande</strong></h3>
 
-    <p>Nombre d'articles {{this.cartService.productQuantity}}</p>
+    <p>Nombre d'articles : {{this.cartService.productQuantity}}</p>
     <ul *ngFor="let cartProduct of cart">
         <li>{{cartProduct.product.reference}} - Quantité : {{cartProduct.quantity}}</li>
     </ul>
-    <p>Cout total de la commande : {{(this.cartService.totalPrice)*(1+0.02)| currency:'€': 'code' : '1.2-2' :'fr'}}</p>
+    <p>Coût total de la commande : {{(this.cartService.totalPrice)*(1+0.02)| currency:'€': 'code' : '1.2-2' :'fr'}}</p>
 
 </main>
