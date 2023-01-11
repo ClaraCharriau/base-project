@@ -68,9 +68,9 @@ export class CartService {
     // et enregistre le panier
     this.saveCart(cart);
 
-    // Plus tard on ajoutera le calcul du total et la quantité de produit (voir méthode après)
-    // this.getCartTotal();
-    // this.getProductQuantity();
+    
+    this.getCartTotal();
+    this.getProductQuantity();
 
   }
   
@@ -126,8 +126,4 @@ export class CartService {
 
   }
 
-
-// function getCartTotal() {
-//   throw new Error('Function not implemented.');
-// }
 

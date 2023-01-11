@@ -1,20 +1,24 @@
 <div class="basket-total-facturation flex column">
 
     <div class="basket-subtotal flex">
+        <p><strong>Nombre d'articles</strong></p>
+        <p><strong>{{this.cartService.productQuantity}}</strong></p>
+    </div>
+    <div class="basket-subtotal flex">
         <p>Valeur de la commande</p>
-        <p>96,00€ </p>
+        <p>{{this.cartService.totalPrice| currency:'€': 'code' : '1.2-2' :'fr'}}</p>
     </div>
     <div class="basket-subtotal flex">
         <p>Livraison</p>
-        <p>0,00€ </p>
+        <p>0,00 € </p>
     </div>
     <div class="basket-delivery-total flex">
         <p>Réduction code promotionnel</p>
-        <p>-0,00€</p>
+        <p>-0,00 €</p>
     </div>
     <hr class="divider-total-facturation">
     <div class="basket-total flex">
         <p><strong>Total de la commande (TVA incluse)</strong></p>
-        <p><strong>96,00€</strong></p>
+        <p><strong>{{(this.cartService.totalPrice)*(1+0.02)| currency:'€': 'code' : '1.2-2' :'fr'}}</strong></p>
     </div>
 </div>
