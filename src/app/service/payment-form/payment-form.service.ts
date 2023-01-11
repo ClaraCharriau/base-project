@@ -8,8 +8,11 @@ export interface ClientInfos {
 @Injectable({
   providedIn: 'root'
 })
+
 export class PaymentFormService {
 
+  currentClientStorage: any;
+  
   // Créer le conteneur pour les infos clients
   private createClientStorage() {
     const newClientStorage = JSON.stringify([]);
@@ -32,7 +35,8 @@ export class PaymentFormService {
 
   storeClientInfos(paymentForm: FormGroup) {
 
-    const currentClientStorage = this.getClientStorage();
+    // Je remets à zéro mon stockage
+    const currentClientStorage = [];
 
     // Je récupère l'objet value du FormGroup
     currentClientStorage.push(paymentForm.value);
@@ -41,7 +45,18 @@ export class PaymentFormService {
     localStorage.setItem('client-storage', JSON.stringify(currentClientStorage));
 
   }
-  
 
+  getClientInfos(): void {
+    const clientStorage = this.getClientStorage();
+
+    // Dans le storage [] je récupère mon objet avec les réponses
+    clientStorage.find((object: any) =>{ 
+      this.currentClientStorage = object;
+    });
+
+    return this.currentClientStorage;
+
+  }
+  
 
 }
