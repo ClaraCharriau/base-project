@@ -31,18 +31,18 @@ export class PaymentFormComponent {
   // Création du formulaire
   initPaymentForm() {
     this.paymentForm = this.formBuilder.group({
-      client_mailAdress: [null],
-      client_password:[null],
-      client_firstName: [null],
-      client_lastName:[null],
-      client_birthDate:[null],
-      client_phoneNumber: [null],
-      billing_adress: [null],
-      billing_postCode: [null],
-      billing_city:[null],
-      card_number: [null],
-      card_expiration:[null],
-      card_cvv: [null],
+      client_mailAdress: [null, [Validators.required, Validators.pattern(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)]],
+      client_password: [null, [Validators.required, Validators.pattern(/^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d).*$/)]],
+      client_firstName: [null, [Validators.required]],
+      client_lastName: [null, [Validators.required]],
+      client_birthDate: [null, [Validators.required, Validators.pattern(/^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)[0-9]{2}/)]],
+      client_phoneNumber: [null, [Validators.pattern(/^[0-9]{10}$/)]],
+      billing_adress: [null, [Validators.required]],
+      billing_postCode: [null, [Validators.required, Validators.pattern(/^[0-9]{5}$/)]],
+      billing_city: [null, [Validators.required]],
+      card_number: [null, [Validators.required, Validators.pattern(/^[0-9]{16}$/)]],
+      card_expiration: [null, [Validators.required]],
+      card_cvv: [null, [Validators.required, Validators.pattern(/^[0-9]{3}$/)]],
     });
 
   }
