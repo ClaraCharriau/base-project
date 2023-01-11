@@ -3,7 +3,8 @@
     <h3>Commande confirmée !</h3>
 
     <p>Merci
-        {{this.paymentService.currentClientStorage.client_firstName}} {{this.paymentService.currentClientStorage.client_lastName}},
+        {{this.paymentService.currentClientStorage.client_firstName}}
+        {{this.paymentService.currentClientStorage.client_lastName}},
         vous allez recevoir un mail de confirmation à
         l'adresse suivante :</p>
 
@@ -11,12 +12,16 @@
 
     <p>Votre commande sera envoyée à l'adresse : </p>
 
-    <p>{{this.paymentService.currentClientStorage.billing_adress}}, {{this.paymentService.currentClientStorage.billing_city}} {{this.paymentService.currentClientStorage.billing_postCode}}</p>
+    <p>{{this.paymentService.currentClientStorage.billing_adress}},
+        {{this.paymentService.currentClientStorage.billing_city}}
+        {{this.paymentService.currentClientStorage.billing_postCode}}</p>
 
     <p>Récapitulatif de la commande</p>
 
     <p>Nombre d'articles {{this.cartService.productQuantity}}</p>
-    <p>Noms des articles</p>
+    <ul *ngFor="let cartProduct of cart">
+        <li>{{cartProduct.product.reference}} - Quantité : {{cartProduct.quantity}}</li>
+    </ul>
     <p>Cout total de la commande : {{(this.cartService.totalPrice)*(1+0.02)| currency:'€': 'code' : '1.2-2' :'fr'}}</p>
 
 </main>

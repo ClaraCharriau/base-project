@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartProduct, CartService } from 'src/app/service/cart/cart.service';
 import { PaymentFormService } from 'src/app/service/payment-form/payment-form.service';
+import { ProductsService } from 'src/app/service/products/products.service';
 
 @Component({
   selector: 'app-payment-success',
@@ -9,13 +10,19 @@ import { PaymentFormService } from 'src/app/service/payment-form/payment-form.se
 })
 export class PaymentSuccessComponent {
 
-  constructor(public paymentService: PaymentFormService, public cartService: CartService) {}
+  cart: CartProduct[] = [];
+
+  constructor(public paymentService: PaymentFormService, public cartService: CartService, public product: ProductsService) {}
 
   ngOnInit() {
     this.paymentService.getClientInfos();
+    this.getCart();
     this.cartService.getCartTotal();
     this.cartService.getProductQuantity();
-    this.cartService.getCart();
+  }
+
+  getCart() {
+    this.cart = this.cartService.getCart();
   }
 
 }
