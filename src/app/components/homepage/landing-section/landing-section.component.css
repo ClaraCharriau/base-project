@@ -53,24 +53,36 @@ a {
 
 .carre-homme {
     background-position: auto -20px;
+    background-image: url("src/assets/img/homepage-images/landing-homme03.jpg");
 }
 .carre-femme {
     background-position: auto -50px;
+    background-image: url("src/assets/img/homepage-images/landing-femme03.jpeg");
+}
+
+.carre-femme .text-arrow, .carre-homme .text-arrow {
+    position: absolute;
+    bottom: 35px;
+    right: 80px;
 }
 
 /* Défilement photos */
 .next-photo-homme {
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-name: next-photo-homme;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-delay: 4s;
 }
 .next-photo-femme {
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-name: next-photo-femme;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-delay: 4s;
 }
+
+/* Animation photos */
 
 @keyframes next-photo-homme {
     0% {
@@ -93,11 +105,7 @@ a {
   }
 
 
-.carre-femme .text-arrow, .carre-homme .text-arrow {
-    position: absolute;
-    bottom: 35px;
-    right: 80px;
-}
+
 
 @media (max-width: 850px) {
 
@@ -113,7 +121,6 @@ a {
     }
     .carre-femme, .carre-homme {
         width: 100%;
-        background-position: center;
     }
 
     .carre-femme .text-arrow, .carre-homme .text-arrow {
