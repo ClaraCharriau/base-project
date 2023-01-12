@@ -52,13 +52,46 @@ a {
 }
 
 .carre-homme {
-    background-image: url("src/assets/img/homepage-images/landing-homme03.jpg");
     background-position: auto -20px;
 }
 .carre-femme {
-    background-image: url("src/assets/img/homepage-images/landing-femme03.jpeg");
     background-position: auto -50px;
 }
+
+/* Défilement photos */
+.next-photo-homme {
+    animation-duration: 10s;
+    animation-name: next-photo-homme;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.next-photo-femme {
+    animation-duration: 10s;
+    animation-name: next-photo-femme;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes next-photo-homme {
+    0% {
+        background-image: url("src/assets/img/homepage-images/landing-homme03.jpg");
+    }
+  
+    100% {
+        background-image: url("src/assets/img/homepage-images/landing-homme02.jpg");
+    }
+  }
+
+  @keyframes next-photo-femme {
+    0% {
+        background-image: url("src/assets/img/homepage-images/landing-femme03.jpeg");
+    }
+  
+    100% {
+        background-image: url("src/assets/img/homepage-images/landing-femme02.png");
+    }
+  }
+
 
 .carre-femme .text-arrow, .carre-homme .text-arrow {
     position: absolute;
