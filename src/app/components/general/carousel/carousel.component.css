@@ -2,6 +2,11 @@ svg {
     min-width: 40px;
 }
 
+button {
+    background-color: rgba(000, 000, 000, 0);
+    border: none;
+}
+
 .flex {
     display: flex;
 }
@@ -12,9 +17,8 @@ svg {
     align-items: center;
     gap: 38px;
 }
-
-.carousel ul {
-    gap: 60px;
+.cache-carousel-two {
+    overflow: hidden;
 }
 
 .carousel-clothe-slide {
@@ -22,11 +26,12 @@ svg {
 }
 
 .carousel-clothe-slide img {
-    width: 20vw;
+    width: 30vw;
     height: 300px;
     object-fit: cover;
 }
 
+/* BOUTONS */
 .previous-btn-carousel:hover,
 .next-btn-carousel:hover {
     cursor: pointer;
@@ -37,11 +42,21 @@ svg {
     transform: translateX(-8px);
     transition: transform 0.3s;
 }
-
 .next-btn-carousel:hover {
     transform: translateX(8px);
     transition: transform 0.3s;
 }
+
+
+/* News */
+
+.all-carousel-items-two {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+}  
+
 
 @media (max-width: 850px) {
 
