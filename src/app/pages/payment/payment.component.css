@@ -3,39 +3,16 @@ main {
     margin: 20px 0 0 0;
 }
 
-section {
-    display: flex;
-    gap : 60px;
-}
-
 h2 {
     font-weight: 700;
     font-size: clamp(30px, 3vw, 45px);
     margin-bottom: 45px;
 }
 
-.left-side {
-    width: 70vw;
-}
-
-.right-side {
-    width: 30vw;
-}
-
 @media (max-width: 850px) {
-
 
     main {
         padding: 0px 25px;
-    }
-
-    section {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .right-side, .left-side {
-        width: 100%;
     }
 
 }

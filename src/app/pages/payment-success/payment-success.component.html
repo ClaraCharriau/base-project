@@ -1,1 +1,27 @@
-<p>Succès ! Paiement approuvé !</p>
+<main>
+
+    <h2>Commande confirmée !</h2>
+
+    <p>Merci
+        {{this.paymentService.currentClientStorage.client_firstName}}
+        {{this.paymentService.currentClientStorage.client_lastName}} !<br>
+        vous allez recevoir un mail de confirmation à
+        l'adresse suivante : <strong>{{this.paymentService.currentClientStorage.client_mailAdress}}</strong></p>
+
+
+    <p>Votre commande sera envoyée à l'adresse : <br>
+        {{this.paymentService.currentClientStorage.billing_adress}},<br>
+        {{this.paymentService.currentClientStorage.billing_postCode}}  
+        {{this.paymentService.currentClientStorage.billing_city | uppercase }}</p>
+
+        <hr>
+
+    <h3><strong>Récapitulatif de la commande</strong></h3>
+
+    <p>Nombre d'articles : {{this.cartService.productQuantity}}</p>
+    <ul *ngFor="let cartProduct of cart">
+        <li>{{cartProduct.product.reference}} - Quantité : {{cartProduct.quantity}}</li>
+    </ul>
+    <p>Coût total de la commande : {{(this.cartService.totalPrice)*(1+0.02)| currency:'€': 'code' : '1.2-2' :'fr'}}</p>
+
+</main>

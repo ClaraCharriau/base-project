@@ -18,10 +18,6 @@ export class CartProductCardComponent {
   removeProduct() {
     this.cartService.removeProduct(this.index);
     this.updateCart.emit();
-  
   }
 
-
-  
 }
-

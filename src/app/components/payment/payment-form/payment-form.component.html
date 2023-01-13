@@ -1,131 +1,164 @@
 <form [formGroup]="paymentForm">
 
-    <!-- Informations client -->
-    <div class="input-group">
-        <h3>Mes informations</h3>
+    <div class="left-side">
 
-        <div class="flex input-line">
-            <!-- Adresse mail -->
-            <div class="flex column input-box">
-                <label for="client_mailAdress">Adresse mail *</label>
-                <input type="text" id="client_mailAdress" formControlName="client_mailAdress"
-                    [class.error]="validationErrors.includes('client_mailAdress')">
+        <!-- Informations client -->
+        <div class="input-group">
+            <h3>Mes informations</h3>
+
+            <p class="asterix">Champs obligatoires *</p>
+
+            <div class="flex input-line">
+                <!-- Adresse mail -->
+                <div class="flex column input-box">
+                    <label for="client_mailAdress">Adresse mail *</label>
+                    <input type="text" id="client_mailAdress" placeholder="adresse@mail.com" formControlName="client_mailAdress"
+                        [class.error]="validationErrors.includes('client_mailAdress')">
+                        <p class="help-error" *ngIf="validationErrors.includes('client_mailAdress')">Entrez une adresse mail valide.</p>
+                </div>
+
+                <!-- mot de passe -->
+                <div class="flex column input-box">
+                    <label for="client_password">Mot de passe *</label>
+                    <input type="password" id="client_password" placeholder="******" formControlName="client_password"
+                        [class.error]="validationErrors.includes('client_password')">
+                    <p class="help-error" *ngIf="validationErrors.includes('client_password')">8 caractères minimum, 1 majuscule, 1 nombre.</p>
+                </div>
             </div>
 
-            <!-- mot de passe -->
-            <div class="flex column input-box">
-                <label for="client_password">Mot de passe *</label>
-                <input type="text" id="client_password" formControlName="client_password"
-                    [class.error]="validationErrors.includes('client_password')">
+            <div class="flex input-line">
+                <!-- Nom -->
+                <div class="flex column input-box">
+                    <label for="client_lastName">Nom *</label>
+                    <input type="text" id="client_lastName" placeholder="Nom" formControlName="client_lastName"
+                        [class.error]="validationErrors.includes('client_lastName')">
+                    <p class="help-error" *ngIf="validationErrors.includes('client_lastName')">Ce champ est requis.</p>
+                </div>
+
+                <!-- Prénom -->
+                <div class="flex column input-box">
+                    <label for="client_firstName">Prénom *</label>
+                    <input type="text" id="client_firstName" placeholder="Prénom" formControlName="client_firstName"
+                        [class.error]="validationErrors.includes('client_firstName')">
+                    <p class="help-error" *ngIf="validationErrors.includes('client_firstName')">Ce champ est requis.</p>
+                </div>
+            </div>
+
+            <div class="flex input-line">
+                <!-- Date de naissance -->
+                <div class="flex column input-box">
+                    <label for="client_birthDate">Date de naissance *</label>
+                    <input type="text" id="client_birthDate" placeholder="JJ/MM/AAAA" formControlName="client_birthDate"
+                        [class.error]="validationErrors.includes('client_birthDate')">
+                    <p class="help-error" *ngIf="validationErrors.includes('client_birthDate')">Entrez une date au format JJ/MM/AAAA.</p>
+                </div>
+
+                <!-- Numéro de téléphone -->
+                <div class="flex column input-box">
+                    <label for="client_phoneNumber">Numéro de téléphone</label>
+                    <input type="text" id="client_phoneNumber" placeholder="0645324565" formControlName="client_phoneNumber"
+                        [class.error]="validationErrors.includes('client_phoneNumber')">
+                    <p class="help-error" *ngIf="validationErrors.includes('client_phoneNumber')">Entrez un numéro de téléphone valide.</p>
+                </div>
+
             </div>
         </div>
 
-        <div class="flex input-line">
-            <!-- Nom -->
-            <div class="flex column input-box">
-                <label for="client_lastName">Nom *</label>
-                <input type="text" id="client_lastName" formControlName="client_lastName"
-                    [class.error]="validationErrors.includes('client_lastName')">
+        <!-- Adresse de facturation -->
+        <div class="input-group">
+
+            <h3>Adresse de facturation</h3>
+
+            <!-- Adresse -->
+            <div class="flex column input-solo input-box">
+                <label for="billing_adress">Adresse *</label>
+                <input type="text" id="billing_adress" placeholder="10 rue de la Baune" formControlName="billing_adress"
+                    [class.error]="validationErrors.includes('billing_adress')">
+                    <p class="help-error" *ngIf="validationErrors.includes('billing_adress')">Ce champ est requis.</p>
             </div>
 
-            <!-- Prénom -->
-            <div class="flex column input-box">
-                <label for="client_firstName">Prénom *</label>
-                <input type="text" id="client_firstName" formControlName="client_firstName"
-                    [class.error]="validationErrors.includes('client_firstName')">
+
+            <div class="flex input-line">
+                <!-- Code postal -->
+                <div class="flex column input-box">
+                    <label for="billing_postCode">Code postal *</label>
+                    <input type="text" id="billing_postCode" placeholder="93000" formControlName="billing_postCode"
+                        [class.error]="validationErrors.includes('billing_postCode')">
+                        <p class="help-error" *ngIf="validationErrors.includes('billing_postCode')">Code postal invalide.</p>
+                </div>
+
+                <!-- Ville -->
+                <div class="flex column input-box">
+                    <label for="billing_city">Ville *</label>
+                    <input type="text" id="billing_city" placeholder="MONTREUIL" formControlName="billing_city"
+                        [class.error]="validationErrors.includes('billing_city')">
+                        <p class="help-error" *ngIf="validationErrors.includes('billing_city')">Ce champ est requis.</p>
+                </div>
             </div>
+
+
         </div>
 
-        <div class="flex input-line">
-            <!-- Date de naissance -->
-            <div class="flex column input-box">
-                <label for="client_birthDate">Date de naissance *</label>
-                <input type="text" id="client_birthDate" formControlName="client_birthDate"
-                    [class.error]="validationErrors.includes('client_birthDate')">
-            </div>
+        <!-- Livraison standard -->
+        <div class="input-group">
 
-            <!-- Numéro de téléphone -->
-            <div class="flex column input-box">
-                <label for="client_phoneNumber">Numéro de téléphone</label>
-                <input type="text" id="client_phoneNumber" formControlName="client_phoneNumber"
-                    [class.error]="validationErrors.includes('client_phoneNumber')">
-            </div>
+            <h3>Livraison standard</h3>
+
+            <p>0,00 € - 3-5 jours ouvrés</p>
 
         </div>
+
+        <!-- Paiement -->
+        <div class="input-group">
+
+            <h3 class="margin-top">Paiement</h3>
+
+            <!-- Numéro de carte -->
+            <div class="flex column input-solo input-box">
+                <label for="card_number">Numéro de carte *</label>
+                <input type="text" id="card_number" placeholder="1234 5678 1234 6789" formControlName="card_number"
+                    [class.error]="validationErrors.includes('card_number')">
+                    <p class="help-error" *ngIf="validationErrors.includes('card_number')">Entrez un numéro de carte valide.</p>
+            </div>
+
+            <div class="flex input-line">
+                <!-- Date d'expiration -->
+                <div class="flex column input-box">
+                    <label for="card_expiration">Date d'expiration *</label>
+                    <input type="text" id="card_expiration" placeholder="MM/AA" formControlName="card_expiration"
+                        [class.error]="validationErrors.includes('card_expiration')">
+                        <p class="help-error" *ngIf="validationErrors.includes('card_expiration')">Date d'expiration invalide.</p>
+                </div>
+
+                <!-- CVV/CVC -->
+                <div class="flex column input-box">
+                    <label for="card_cvv">CVV/CVC *</label>
+                    <input type="text" id="card_cvv" placeholder="123" formControlName="card_cvv"
+                        [class.error]="validationErrors.includes('card_cvv')">
+                        <p class="help-error" *ngIf="validationErrors.includes('card_cvv')">Code invalide.</p>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 
-    <!-- Adresse de facturation -->
-    <div class="input-group">
+    <div class="right-side">
+        <h3>Récapitulatif</h3>
 
-        <h3>Adresse de facturation</h3>
+        <app-payment-total></app-payment-total>
 
-        <!-- Adresse -->
-        <div class="flex column input-solo input-box">
-            <label for="billing_adress">Adresse *</label>
-            <input type="text" id="billing_adress" formControlName="billing_adress"
-                [class.error]="validationErrors.includes('billing_adress')">
-        </div>
+        <p class="grey-text">Nous traitons vos données personnelles conformément à la <a href="#">Politique de confidentialité de B.A.S.E.</a>
+        </p>
+    
+        <p class="grey-text">En continuant, vous acceptez les <a href="#">Conditions générales de B.A.S.E.</a></p>
 
+        <!-- Validation d'achat -->
+        <button class="validation-btn" (click)="onFormSubmit()" type="submit">Valider l'achat</button>
 
-        <div class="flex input-line">
-            <!-- Code postal -->
-            <div class="flex column input-box">
-                <label for="billing_postCode">Code postal *</label>
-                <input type="text" id="billing_postCode" formControlName="billing_postCode"
-                    [class.error]="validationErrors.includes('billing_postCode')">
-            </div>
-
-            <!-- Ville -->
-            <div class="flex column input-box">
-                <label for="billing_city">Ville *</label>
-                <input type="text" id="billing_city" formControlName="billing_city"
-                    [class.error]="validationErrors.includes('billing_city')">
-            </div>
-        </div>
-
+        <app-return-infos></app-return-infos>
 
     </div>
-
-    <!-- Livraison standard -->
-    <div class="input-group">
-
-        <h3>Livraison standard</h3>
-
-        <p>0,00 € - 3-5 jours ouvrés</p>
-
-    </div>
-
-    <!-- Paiement -->
-    <div class="input-group">
-
-        <h3 class="margin-top">Paiement</h3>
-
-        <!-- Numéro de carte -->
-        <div class="flex column input-solo input-box">
-            <label for="card_number">Numéro de carte *</label>
-            <input type="text" id="card_number" formControlName="card_number"
-                [class.error]="validationErrors.includes('card_number')">
-        </div>
-
-        <div class="flex input-line">
-            <!-- Date d'expiration -->
-            <div class="flex column input-box">
-                <label for="card_expiration">Date d'expiration *</label>
-                <input type="text" id="card_expiration" formControlName="card_expiration"
-                    [class.error]="validationErrors.includes('card_expiration')">
-            </div>
-
-            <!-- CVV/CVC -->
-            <div class="flex column input-box">
-                <label for="card_cvv">CVV/CVC *</label>
-                <input type="text" id="card_cvv" formControlName="card_cvv"
-                    [class.error]="validationErrors.includes('card_cvv')">
-            </div>
-        </div>
-
-
-    </div>
-
-    <button (click)="onFormSubmit()" type="submit">Valider l'achat</button>
 
 </form>
