@@ -2,9 +2,10 @@ type ProductStatus = 'disponible' | 'disponible uniquement en magasin' | 'indisp
 type ProductSize = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL';
 type ProductFit = 'près du corps' | 'oversized' | 'loose' | 'regular'| 'ample'|'slim'|'tight';
 
+
+
 export interface Product {
     id: number;
-
     // Bien mettre une majuscule et au pluriel pour le titre de la page single-catégory
     category: string;
     reference: string;
@@ -66,9 +67,29 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-03.jpeg",
         photoFour: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-04.jpeg",
     },
+        // ID 2 POYESTER RECYCLE
+    {
+        id: 2,
+        category: "Polyester recyclé",
+        reference: 'Pull chaussette',
+        productSize: 'XS',
+        price: 39.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Pull chaussette en maille fine près du corps pour toutes saisons.',
+        productFit: 'près du corps',
+        composition: '92% polyester recyclé, 8% élasthanne',
+        washingMaintenance: "lavage à 30◦, blanchiment interdit, séchage en tambour cycle normal, repassage doux sur l'envers, nettoyage à sec autorisé.",
+        photoOne: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-01.jpeg",
+        photoTwo: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-02.jpeg",
+        photoThree: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-03.jpeg",
+        photoFour: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-04.jpeg",
+        },
+
+
     {
         id: 3,
-        category: "Pulls",
+        category: "Pulls", 
         reference: 'Gilet oversized 100% coton bio',
         productSize: 'XS',
         price: 59.90,
@@ -83,6 +104,27 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_03 - Grande.jpeg",
         photoFour: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_04 - Grande.jpeg",
     },
+
+    // ID 3 100% COTON BIO
+    {
+        id: 3,
+        category: "Coton bio", 
+        reference: 'Gilet oversized 100% coton bio',
+        productSize: 'XS',
+        price: 59.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Cardigan ample et court en grosses côtes.',
+        productFit: 'oversized',
+        composition: '100% coton bio',
+        washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
+        photoOne: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg",
+        photoTwo: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_02 - Grande.jpeg",
+        photoThree: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_03 - Grande.jpeg",
+        photoFour: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_04 - Grande.jpeg",
+        },
+
+
     {
         id: 4,
         category: "Pulls",
@@ -225,21 +267,21 @@ export const PRODUCTLIST: Product[] = [
         },
 
         {
-            id: 12,
-            category: "Robes",
-            reference: "Robe longue imprimée",
-            productSize: 'XS',
-            price: 199.90,
-            productStatus: 'disponible',
-            isAvailable: true,
-            description: 'Robe imprimé fleur manches courtes drapées, entièrement couverte de broderie anglaise.',
-            productFit: 'regular',
-            composition: '100% soie',
-            washingMaintenance:"lavage délicat à la main, blanchiment interdit, séchage suspendu à l'ombre, repassage doux sur l'envers, nettoyage à sec déconseillé.",
-            photoOne: "assets/img/products-images/femme/robes/robe_3.jpeg",
-            photoTwo: "assets/img/products-images/femme/robes/robe_3.jpeg",
-            photoThree: "assets/img/products-images/femme/robes/robe_3.jpeg",
-            photoFour: "assets/img/products-images/femme/robes/robe_3.jpeg",
+        id: 12,
+        category: "Robes",
+        reference: "Robe longue imprimée",
+        productSize: 'XS',
+        price: 199.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Robe imprimé fleur manches courtes drapées, entièrement couverte de broderie anglaise.',
+        productFit: 'regular',
+        composition: '100% soie',
+        washingMaintenance:"lavage délicat à la main, blanchiment interdit, séchage suspendu à l'ombre, repassage doux sur l'envers, nettoyage à sec déconseillé.",
+        photoOne: "assets/img/products-images/femme/robes/robe_3.jpeg",
+        photoTwo: "assets/img/products-images/femme/robes/robe_3.jpeg",
+        photoThree: "assets/img/products-images/femme/robes/robe_3.jpeg",
+        photoFour: "assets/img/products-images/femme/robes/robe_3.jpeg",
         },
 
         {
@@ -326,7 +368,7 @@ export const PRODUCTLIST: Product[] = [
         isAvailable: true,
         description: 'Chemise rayée coupe boyfriend avec poche poitrine gauche',
         productFit: 'oversized',
-        composition: '100% coton upcyclé',
+        composition: '100% coton bio',
 	    washingMaintenance:"lavage à 40◦, blanchiment interdit, séchage en tambour cycle délicat, repassage à feu moyen, nettoyage à sec autorisé.",
         photoOne: "assets/img/products-images/femme/tops/top-Chemise-poche-poitrine/top_1_1.jpeg",
         photoTwo: "assets/img/products-images/femme/tops/top-Chemise-poche-poitrine/top_1_2.jpeg",
@@ -452,7 +494,7 @@ export const PRODUCTLIST: Product[] = [
         isAvailable: true,
         description: 'Top à bretelles en tissu carreaux Vichy et noeud encolure devant.',
         productFit: 'loose',
-        composition: '100% coton upcyclé',
+        composition: '100% coton bio',
 	    washingMaintenance:"lavage à 40◦, blanchiment interdit, séchage en tambour cycle délicat, repassage à fer moyen (2 points), nettoyage à sec autorisé.",
         photoOne: "assets/img/products-images/femme/tops/top-Top-a-bretelles-fantaisie/top_8_1.jpeg",
         photoTwo: "assets/img/products-images/femme/tops/top-Top-a-bretelles-fantaisie/top_8_2.jpeg",
@@ -508,7 +550,7 @@ export const PRODUCTLIST: Product[] = [
         isAvailable: true,
         description: 'Robe courte en plumetis, avec découpe V transparente devant, et volantsen résille  .',
         productFit: 'regular',
-	    composition:  "70% polyester recyclé 30% viscose.",
+	    composition:  "70% polyester recyclé, 30% viscose.",
 	    washingMaintenance:"Lavage à la main sur l’envers, blanchiment interdit, séchage suspendu à l’ombre, repassage doux sur l’envers, nettoyage à sec autorisé.",
         photoOne: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_3.jpeg",
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_3.jpeg",
@@ -526,7 +568,7 @@ export const PRODUCTLIST: Product[] = [
         isAvailable: true,
         description: 'Robe longue en deux parties, avec le haut brodé de passementeries, et le bas recouvert de froufrous en forme de rose.',
         productFit: 'regular',
-	    composition:  "90% coton, 5% soie, 5% polyester.",
+	    composition:  "90% coton bio, 5% soie, 5% polyester.",
 	    washingMaintenance:"Lavage à la main sur l’envers, blanchiment interdit, séchage suspendu à l’ombre, repassage doux sur l’envers, nettoyage à sec autorisé.",
         photoOne: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_4.jpeg",
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_4.jpeg",
@@ -560,7 +602,7 @@ export const PRODUCTLIST: Product[] = [
         isAvailable: true,
         description: 'Robe longue en mousseline, avec le haut brodé de passementeries et le bas de pétales de tissu, doublée sous la taille.',
         productFit: 'regular',
-	    composition:  '46% coton, 23% Polyester, 17% viscose, 14% soie.',
+	    composition:  '46% coton bio, 23% Polyester, 17% viscose, 14% soie.',
 	    washingMaintenance: "Nettoyage à sec uniquement.",
         photoOne: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_6.jpeg",
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_6.jpeg",
@@ -577,7 +619,7 @@ export const PRODUCTLIST: Product[] = [
         isAvailable: true,
         description: 'Robe longue sans manche en dentelle brodée,entièrement doublée.',
         productFit: 'regular',
-	    composition: '56% coton, 23% Polyester, 11% soie.',
+	    composition: '56% coton bio, 23% Polyester, 11% soie.',
 	    washingMaintenance: "Lavage à la main sur l’envers, blanchiment interdit, séchage suspendu à l’ombre, repassage doux sur l’envers, nettoyage à sec autorisé.",
         photoOne: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_7.jpeg",
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_7.jpeg",
