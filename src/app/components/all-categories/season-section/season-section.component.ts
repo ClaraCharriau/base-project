@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from 'src/mocks/product-list.mock';
 
 @Component({
   selector: 'app-season-section',

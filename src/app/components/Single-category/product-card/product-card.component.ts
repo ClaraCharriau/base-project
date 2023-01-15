@@ -11,6 +11,7 @@ import { Product } from 'src/mocks/product-list.mock';
 export class ProductCardComponent {
 
   @Input() item!: Product;
+  @Input() historiqueProduct! : Product;
   
 
 }

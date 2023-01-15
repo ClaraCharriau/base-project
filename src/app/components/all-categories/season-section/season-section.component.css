@@ -38,7 +38,7 @@ a {
 .polyester_recycle {
     height: 460px;
     /* CHANGEMENT */
-    background-image: url(/assets/img/all-categories-images/femme_polyester.png);
+    background-image: url(/assets/img/all-categories-images/femme_polyester.jpeg);
 }
 
 /* VTMTS HIVER */
@@ -54,16 +54,56 @@ a {
 }
 
 .vtmts_soiree {
-    background-image: url(/assets/img/all-categories-images/femme_vetements_de_fete.png);
+    background-image: url(/assets/img/all-categories-images/femme_vetements_de_fete.jpeg);
 }
 
 .vtmts_chauds {
-    background-image: url(/assets/img/all-categories-images/femme_vetements_chaud.png);
+    background-image: url(/assets/img/all-categories-images/femme_vetements_chaud.jpeg);
 }
 
 /* COTON BIO */
 .coton_bio {
-    background-image: url(/assets/img/all-categories-images/femme_coton_bio.png);
+    background-image: url(/assets/img/all-categories-images/femme_coton_bio.jpeg);
     height: 430px;
 }
 
+@media (max-width: 870px) {
+
+    #categorie_femme {
+        padding: 0 25px;
+    }
+
+    .margin_btw_div {
+        margin: 60px auto;
+    }
+
+    .vetements_hiver {
+        flex-direction: column;
+    }
+
+    .categories_type_insta div {
+        height: 250px;
+    }
+
+}
+
+
+@media (max-width: 730px) {
+    .categories_type_insta div {
+        height: 220px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .categories_type_insta div {
+        height: 120px;
+    }
+
+    .polyester_recycle,
+    .vtmts_soiree,
+    .vtmts_chauds,
+    .coton_bio {
+        height: 270px;
+    }
+}
