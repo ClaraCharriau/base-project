@@ -1,6 +1,6 @@
 type ProductStatus = 'disponible' | 'disponible uniquement en magasin' | 'indisponible en ligne' | 'en réapprovisionnement' | 'épuisé';
 type ProductSize = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL';
-type ProductFit = 'près du corps' | 'oversized' | 'loose' | 'regular'| 'ample'|'slim'|'tight';
+type ProductFit = 'près du corps' | 'oversized' | 'loose' | 'regular'| 'ample' | 'slim' | 'tight' | 'flair';
 
 
 
@@ -466,7 +466,152 @@ export const PRODUCTLIST: Product[] = [
         photoFour: "assets/img/products-images/femme/tops/top-Top-a-bretelles-fantaisie/top_8_4.jpeg",
     },
 
-    // BAS
+     // BAS
+    {
+	    id:25,
+        category: 'Bas',
+	    reference: 'Jean slim',
+        productSize: 'XS',
+        price: 59.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Jean brut taille haute 5 poche.',
+        productFit: 'slim',
+        composition: '98% coton bio, 2% élasthanne',
+	    washingMaintenance:"lavage délicat à 40◦ sur l'envers, blanchiment interdit, séchage en tambour sur cycle délicat, repassage max à 110°, nettoyage à sec déconseillé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-jean-slim/bas_jean_slim_1_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-jean-slim/bas_jean_slim_1_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-jean-slim/bas_jean_slim_1_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-jean-slim/bas_jean_slim_1_4.jpeg",
+    },
+
+
+    {   
+        id:26,
+        category: 'Bas',
+	    reference: "Caleçon d'hiver",
+        productSize: 'XS',
+        price: 39.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Caleçon stretch imprimé avec face intérieure polaire.',
+        productFit: 'slim',
+        composition: '55% polyester recyclé, 30% Viscose, 10% Élasthanne, 5% Polyamide',
+	    washingMaintenance:"lavage délicat à 30◦, blanchiment interdit, séchage en tambour interdit, repassage interdit, nettoyage à sec autorisé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-calecon-hiver/bas_calecon_hiver_2_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-calecon-hiver/bas_calecon_hiver_2_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-calecon-hiver/bas_calecon_hiver_2_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-calecon-hiver/bas_calecon_hiver_2_4.jpeg",
+    },
+
+    {    
+        id:27,
+        category: 'Bas',
+	    reference: 'Pantalon de jogging',
+        productSize: 'XS',
+        price: 39.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Pantalon de jogging, avec poches italiennes et taille élastique réglable.',
+        productFit: 'regular',
+        composition: '100% coton bio',
+	    washingMaintenance:"lavage délicat à 40◦, blanchiment interdit, séchage en tambour sur cycle délicat, repassage à 110° max, nettoyage à sec autorisé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-pantalon-jogging/bas_pantalon_jogging_3_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-pantalon-jogging/bas_pantalon_jogging_3_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-pantalon-jogging/bas_pantalon_jogging_3_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-pantalon-jogging/bas_pantalon_jogging_3_4.jpeg",
+    },
+
+    {   
+        id:28,
+        category: 'Bas',
+	    reference: 'Pantalon cargo',
+        productSize: 'XS',
+        price: 39.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Pantalon treillis avec poche jambe gauche et ceinture nouée à la taille.',
+        productFit: 'regular',
+        composition: '100% coton bio',
+	    washingMaintenance:"lavage délicat à 40◦ sur l'envers, blanchiment interdit, séchage en tambour sur cycle délicat, repassage max à 110°, nettoyage à sec déconseillé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-pantalon-cargo/bas_pantalon_cargo_4_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-pantalon-cargo/bas_pantalon_cargo_4_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-pantalon-cargo/bas_pantalon_cargo_4_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-pantalon-cargo/bas_pantalon_cargo_4_4.jpeg",
+    },
+
+    {
+        id:29,
+        category: 'Bas',
+	    reference: 'Bermuda long léger',
+        productSize: 'XS',
+        price: 49.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Bermuda droit en lin léger, longueur au dessus du genou.',
+        productFit: 'regular',
+        composition: '100% lin',
+	    washingMaintenance:"lavage délicat à 40◦ sur l'envers, blanchiment interdit, séchage en tambour sur cycle délicat, repassage max à 110°, nettoyage à sec autorisé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-bermuda-long-leger/bas_bermuda_long_5_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-bermuda-long-leger/bas_bermuda_long_5_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-bermuda-long-leger/bas_bermuda_long_5_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-bermuda-long-leger/bas_bermuda_long_5_4.jpeg",
+    },
+
+
+    {    
+        id:30,
+        category: 'Bas',
+	    reference: 'Bermuda court léger',
+        productSize: 'XS',
+        price: 44.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Bermuda droit en lin léger, longueur mi-cuisse.',
+        productFit: 'ample',
+        composition: '100% lin',
+	    washingMaintenance:"lavage délicat à 40◦ sur l'envers, blanchiment interdit, séchage en tambour sur cycle délicat, repassage max à 110°, nettoyage à sec autorisé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-bermuda-court-leger/bas_bermuda_long_6_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-bermuda-court-leger/bas_bermuda_long_6_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-bermuda-court-leger/bas_bermuda_long_6_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-bermuda-court-leger/bas_bermuda_long_6_4.jpeg",
+    },
+
+    {
+        id:31,
+        category: 'Bas',
+	    reference: 'Pantalon ample léger',
+        productSize: 'XS',
+        price: 59.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Pantalon ample en lin léger, avec poches italiennes de côté.',
+        productFit: 'ample',
+        composition: '100% lin',
+	    washingMaintenance:"lavage délicat à 40◦ sur l'envers, blanchiment interdit, séchage en tambour sur cycle délicat, repassage max à 110°, nettoyage à sec autorisé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-pantalon-ample-leger/bas_pantalon ample_8_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-pantalon-ample-leger/bas_pantalon ample_8_2.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-pantalon-ample-leger/bas_pantalon ample_8_3.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-pantalon-ample-leger/bas_pantalon ample_8_4.jpeg",
+    },
+
+    {    
+        id:32,
+        category: 'Bas',
+	    reference: 'Jean évasé bleach',
+        productSize: 'XS',
+        price: 69.90,
+        productStatus: 'disponible',
+        isAvailable: true,
+        description: 'Jean évasé taille haute 5 poches, avec bas javellisé.',
+        productFit: 'flair',
+        composition: '100% coton bio. ',
+	    washingMaintenance:"lavage délicat à 40◦ sur l'envers, blanchiment interdit, séchage en tambour sur cycle délicat, repassage max à 110°, nettoyage à sec déconseillé.",
+        photoOne: "assets/img/products-images/femme/bas/bas-jean-evase-bleach/bas_jean_evase_7_1.jpeg",
+        photoTwo: "assets/img/products-images/femme/bas/bas-jean-evase-bleach/bas_jean_evase_7_2_base.jpeg",
+        photoThree: "assets/img/products-images/femme/bas/bas-jean-evase-bleach/bas_jean_evase_7_3_base.jpeg",
+        photoFour: "assets/img/products-images/femme/bas/bas-jean-evase-bleach/bas_jean_evase_7_4.jpeg",
+    },
 
 
     // VETEMENTS DE FETE
@@ -486,9 +631,10 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_1.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_1.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_1.jpeg",
-        },
+    },
 
-	    {id: 34,
+	{
+        id: 34,
         category: 'Vêtements de soirée',
 	    reference: 'Robe imprimé métallisé',
         productSize: 'XS',
@@ -503,9 +649,10 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_2.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_2.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_2.jpeg",
-        },
+    },
 
-	    {id: 35,
+	{
+        id: 35,
         category: 'Vêtements de soirée',
 	    reference: 'Robe courte à volants',
         productSize: 'XS',
@@ -520,9 +667,9 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_3.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_3.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_3.jpeg",
-        },
+    },
 
-	    {
+	{
         id: 36,
         category: 'Vêtements de soirée',
 	    reference: 'Robe brodée froufrou',
@@ -538,9 +685,10 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_4.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_4.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_4.jpeg",
-        },
+    },
 
-	    {id: 37,
+	{
+        id: 37,
         category: 'Vêtements de soirée',
 	    reference: 'Robe en soie brodée',
         productSize: 'XS',
@@ -555,9 +703,10 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_5.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_5.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_5.jpeg",
-        },
+    },
 
-	    {id: 38,
+	{   
+        id: 38,
         category: 'Vêtements de soirée',
 	    reference: 'Robe longue brodée à pétales',
         productSize: 'XS',
@@ -572,9 +721,10 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_6.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_6.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_6.jpeg",
-        },
+    },
 
-	    {id: 39,
+	{
+        id: 39,
         category: 'Vêtements de soirée',   
 	    reference: 'Robe en soie dentelle brodée',
         productSize: 'XS',
@@ -589,9 +739,9 @@ export const PRODUCTLIST: Product[] = [
         photoTwo: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_7.jpeg",
         photoThree: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_7.jpeg",
         photoFour: "assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_7.jpeg",
-        },
+    },
 
-{
+    {
 	    id: 40,
         category: 'Vêtements de soirée',
 	    reference: 'Robe en soie imprimée',
@@ -631,6 +781,7 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "assets/img/products-images/femme/manteaux/trench-coat-femme/pexels-lizzy-honey-14902223 - Grande.jpeg",
         photoFour: "assets/img/products-images/femme/manteaux/trench-coat-femme/pexels-lizzy-honey-14902225 - Grande.jpeg",
     },
+
     {
         id: 16,
         category: 'Manteaux',
