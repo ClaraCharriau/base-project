@@ -7,7 +7,7 @@ type ProductFit = 'près du corps' | 'oversized' | 'loose' | 'regular'| 'ample'|
 export interface Product {
     id: number;
     // Bien mettre une majuscule et au pluriel pour le titre de la page single-catégory
-    category: string;
+    category?: string;
     reference: string;
     productSize: ProductSize;
     price: number;
@@ -37,7 +37,7 @@ export const PRODUCTLIST: Product[] = [
         id: 1,
         category: "Pulls",
         reference: 'Pull torsade chiné',
-        productSize: 'XS',
+        productSize: 'XS'||'L',
         price: 69.90,
         productStatus: 'disponible',
         isAvailable: true,
@@ -52,7 +52,7 @@ export const PRODUCTLIST: Product[] = [
     },
     {
         id: 2,
-        category: "Pulls",
+        category: "Pulls" ,
         reference: 'Pull chaussette',
         productSize: 'XS',
         price: 39.90,
@@ -67,25 +67,6 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-03.jpeg",
         photoFour: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-04.jpeg",
     },
-        // ID 2 POYESTER RECYCLE
-    {
-        id: 2,
-        category: "Polyester recyclé",
-        reference: 'Pull chaussette',
-        productSize: 'XS',
-        price: 39.90,
-        productStatus: 'disponible',
-        isAvailable: true,
-        description: 'Pull chaussette en maille fine près du corps pour toutes saisons.',
-        productFit: 'près du corps',
-        composition: '92% polyester recyclé, 8% élasthanne',
-        washingMaintenance: "lavage à 30◦, blanchiment interdit, séchage en tambour cycle normal, repassage doux sur l'envers, nettoyage à sec autorisé.",
-        photoOne: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-01.jpeg",
-        photoTwo: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-02.jpeg",
-        photoThree: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-03.jpeg",
-        photoFour: "/assets/img/products-images/femme/pull/pull-femme-kaki/photo-04.jpeg",
-        },
-
 
     {
         id: 3,
@@ -105,26 +86,6 @@ export const PRODUCTLIST: Product[] = [
         photoFour: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_04 - Grande.jpeg",
     },
 
-    // ID 3 100% COTON BIO
-    {
-        id: 3,
-        category: "Coton bio", 
-        reference: 'Gilet oversized 100% coton bio',
-        productSize: 'XS',
-        price: 59.90,
-        productStatus: 'disponible',
-        isAvailable: true,
-        description: 'Cardigan ample et court en grosses côtes.',
-        productFit: 'oversized',
-        composition: '100% coton bio',
-        washingMaintenance: "lavage à 40◦, blanchiment interdit, séchage suspendu à l'ombre, repassage à température moyenne (2 points), nettoyage à sec autorisé.",
-        photoOne: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg",
-        photoTwo: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_02 - Grande.jpeg",
-        photoThree: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_03 - Grande.jpeg",
-        photoFour: "/assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_04 - Grande.jpeg",
-        },
-
-
     {
         id: 4,
         category: "Pulls",
@@ -142,6 +103,7 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "/assets/img/products-images/femme/pull/pull-femme-bleu/409388_B36A06_portrait_HD_4.JPG",
         photoFour: "/assets/img/products-images/femme/pull/pull-femme-bleu/409388_B36A06_portrait_HD_1.JPG",
     },
+
     {
         id: 5,
         category: "Pulls",
@@ -176,6 +138,7 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "assets/img/products-images/femme/pull/pull-femme-orange/hmgoepprod.jpeg",
         photoFour: "assets/img/products-images/femme/pull/pull-femme-orange/hmgoepprod zoom.jpeg",
     },
+
     {
         id: 7,
         category: "Pulls",
@@ -193,6 +156,7 @@ export const PRODUCTLIST: Product[] = [
         photoThree: "assets/img/products-images/femme/pull/pull-femme-arc-en-ciel/product73.jpeg",
         photoFour: "assets/img/products-images/femme/pull/pull-femme-arc-en-ciel/product74.jpeg",
     },
+    
     {
         id: 8,
         category: "Pulls",
