@@ -21,7 +21,17 @@ export class PaymentFormComponent {
   ngOnInit() {
     this.initPaymentForm();
     this.getClientStorage();
+
   }
+
+  // Permet de mettre des espaces en tapant dans l'input du numéro de carte :
+  //
+  // styleCardNumberInput() {
+  //   const cardInput = document.getElementById('card_number');
+  //   this.cardInput.addEventListener('input', function (e) {
+  //     e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+  //   });
+  // }
 
   // Initialiser la récupération des données clients
   getClientStorage() {

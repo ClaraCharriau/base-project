@@ -72,7 +72,7 @@
             <!-- Adresse -->
             <div class="flex column input-solo input-box">
                 <label for="billing_adress">Adresse *</label>
-                <input type="text" id="billing_adress" placeholder="10 rue de la Baune" formControlName="billing_adress"
+                <input type="text" id="billing_adress" placeholder="10 rue de la Beaune" formControlName="billing_adress"
                     [class.error]="validationErrors.includes('billing_adress')">
                     <p class="help-error" *ngIf="validationErrors.includes('billing_adress')">Ce champ est requis.</p>
             </div>
@@ -118,7 +118,7 @@
                 <label for="card_number">Numéro de carte *</label>
                 <input type="text" id="card_number" placeholder="1234 5678 1234 6789" formControlName="card_number"
                     [class.error]="validationErrors.includes('card_number')">
-                    <p class="help-error" *ngIf="validationErrors.includes('card_number')">Entrez un numéro de carte valide.</p>
+                    <p class="help-error" *ngIf="validationErrors.includes('card_number')">Entrez un numéro de carte valide à 16 chiffres.</p>
             </div>
 
             <div class="flex input-line">

@@ -1,0 +1,17 @@
+main {
+    padding: 0px 60px;
+    margin: 20px 0 0 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(30px, 3vw, 45px);
+}
+
+@media (max-width: 850px) {
+
+
+    main {
+        padding: 0px 25px;
+    }
+}

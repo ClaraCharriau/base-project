@@ -14,9 +14,6 @@ a {
 
 }
 
-#categorie_femme {
-    padding: 0 60px;
-}
 #categorie_femme h3 {
     font-size: clamp(23px, 3vw, 40px);
     color: white;
@@ -27,7 +24,7 @@ a {
 
 /* MARGIN between div */
 .margin_btw_div {
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 /* Background image parametres */
