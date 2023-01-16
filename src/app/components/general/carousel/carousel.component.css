@@ -17,7 +17,7 @@ button {
     align-items: center;
     gap: 38px;
 }
-.cache-carousel-two {
+.cache-carousel {
     overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ button {
 
 /* News */
 
-.all-carousel-items-two {
+.all-carousel-items {
     display: inline-flex;
     list-style-type: none;
     margin: 20px;

@@ -11,8 +11,7 @@ export class CarouselComponent {
   // carouselSlider = this.document.querySelector('.cache-carousel-two') as HTMLElement;
   //carouselSlider: HTMLElement = this.document.getElementById('cache-carousel-two');
 
-
-  @ViewChild('cache', { static: false }) carouselSlider!: HTMLDivElement;
+  @ViewChild('cache', { static: false }) carouselSlider!: ElementRef;
 
   ngAfterViewInit() {
     this.carouselSlider;
@@ -34,7 +33,5 @@ slideToRight() {
     behavior: 'smooth',
   });
 }
-
-
 
 }

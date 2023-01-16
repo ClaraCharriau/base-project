@@ -25,6 +25,7 @@ const routes: Routes = [
   // Panier
   { path: 'cart', component: CartComponent },
 
+  
   // Formulaire de paiement
   { path: 'payment', component: PaymentComponent},
 
