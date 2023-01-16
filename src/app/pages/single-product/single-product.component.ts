@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from 'src/app/service/products/products.service';
+import { HistoriqueProduct, RecentlyConsultedService } from 'src/app/service/RecentlyConsulted/recently-consulted.service';
 import { Product, PRODUCTLIST } from 'src/mocks/product-list.mock';
 
 @Component({
@@ -17,11 +18,25 @@ export class SingleProductComponent {
     private route: ActivatedRoute,
     private router: Router,
     private productService: ProductsService,
+    private recentlyConsulted : RecentlyConsultedService
   ) { }
 
   ngOnInit() {
     this.getProductById();
   }
+  ngOnDestroy() {
+    this.addToHistorique();
+  }
+
+  addToHistorique() {
+    if(!this.product) return;
+
+    const historiqueProduct : HistoriqueProduct = {
+      product: this.product
+    }
+    this.recentlyConsulted.addProductToHistorique(historiqueProduct);
+  }
+   
 
   getProductById() {
     const id = Number(this.route.snapshot.paramMap.get('id'));

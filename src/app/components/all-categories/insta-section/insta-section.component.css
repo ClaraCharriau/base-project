@@ -14,9 +14,6 @@ a {
 
 }
 
-#categorie_femme {
-    padding: 0 60px;
-}
 #categorie_femme h3 {
     font-size: clamp(23px, 3vw, 40px);
     color: white;
@@ -27,7 +24,7 @@ a {
 
 /* MARGIN between div */
 .margin_btw_div {
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 /* Background image parametres */
@@ -44,25 +41,25 @@ a {
 }
 
 .tops {
-    background-image: url(/assets/img/all-categories-images/femme_tops.png);
+    background-image: url(/assets/img/all-categories-images/femme_tops.jpeg);
 }
 
 .bas {
-    background-image: url(/assets/img/all-categories-images/femme_bas.png);
+    background-image: url(/assets/img/all-categories-images/femme_bas.jpeg);
 }
 
 .robes {
-    background-image: url(/assets/img/all-categories-images/femme_robes.png);
+    background-image: url(/assets/img/all-categories-images/femme_robes.jpeg);
 }
 
 .vestes {
-    background-image: url(/assets/img/all-categories-images/femme_vestes.png);
+    background-image: url(/assets/img/all-categories-images/femme_vestes.jpeg);
 }
 
 .manteaux {
-    background-image: url(/assets/img/all-categories-images/femme_manteaux.png);
+    background-image: url(/assets/img/all-categories-images/femme_manteaux.jpeg);
 }
 
 .tout {
-    background-image: url(/assets/img/all-categories-images/femme_tout.png);
+    background-image: url(/assets/img/all-categories-images/femme_tout.jpeg);
 }
