@@ -3,12 +3,6 @@ import { Product } from 'src/mocks/product-list.mock';
 import { ProductsService } from '../products/products.service';
 
 
-// création d'une interface qui correspond à un produit du panier 
-// --> Méthode 2   
-export interface HistoriqueProduct {
-  product: Product;
-}
-
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +10,6 @@ export interface HistoriqueProduct {
 export class RecentlyConsultedService {
 
   constructor(private productsService : ProductsService) { }
-
 
   // --> METHODE 1 : CREATON HISTORIQUE + ENREGISTREMENT LOCALSTORAGE 
   // fonction qui crée un historique 
@@ -35,7 +28,6 @@ export class RecentlyConsultedService {
     if(historique) {
       // je le transforme en objet et le retourne 
       return JSON.parse(historique);
-      // --> si il n'existe pas, ajouter quand meme ?    
     } else {
         // j'appelle la fonction createHistorique() pour le créer
         this.createHistorique();
@@ -46,11 +38,13 @@ export class RecentlyConsultedService {
 
     // Méthode 2 
     // fonction pour ajouter un produit au panier
-    addProductToHistorique(historiqueProduct : HistoriqueProduct) {
+    addProductToHistorique(product : Product) {
       // on récupère l'historique 
+
+
       const historique = this.getHistorique();
       // ajout d'un produit dans l'historique 
-      historique.push(historiqueProduct);
+      historique.push(product);
       // enregistrement de l'historique dans localStorage
       localStorage.setItem('historique', JSON.stringify(historique));
     }

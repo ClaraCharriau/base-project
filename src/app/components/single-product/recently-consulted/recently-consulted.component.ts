@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { HistoriqueProduct, RecentlyConsultedService } from 'src/app/service/RecentlyConsulted/recently-consulted.service';
+import { RecentlyConsultedService } from 'src/app/service/RecentlyConsulted/recently-consulted.service';
+import { Product } from 'src/mocks/product-list.mock';
 
 @Component({
   selector: 'app-recently-consulted',
@@ -8,8 +9,9 @@ import { HistoriqueProduct, RecentlyConsultedService } from 'src/app/service/Rec
 })
 export class RecentlyConsultedComponent {
 
-  historique : HistoriqueProduct[] = [];
+  historique : Product[] = [];
 
+  
   constructor(private historiqueService : RecentlyConsultedService ) {  }
 
   ngOnInit() {
