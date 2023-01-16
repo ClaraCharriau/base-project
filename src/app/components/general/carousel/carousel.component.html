@@ -1,47 +1,52 @@
 <section class="carousel flex">
-
-    <!-- Bouton retour -->
-    <button (click)="slideToLeft()">
-    <svg class="previous-btn-carousel" style="enable-background:new 0 0 512 512;"
-        version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="_x37_16-_back__x2C__left_arrow__x2C__direction__x2C_">
-            <g>
-                <path
-                    d="    M366.277,26.814L154.719,238.271c-10.729,10.221-10.729,26.192,0,36.413l211.559,211.455"
-                    style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
+    <button class="pre-btn"><svg class="previous-btn-carousel" style="enable-background:new 0 0 512 512;" version="1.1"
+            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="_x37_16-_back__x2C__left_arrow__x2C__direction__x2C_">
+                <g>
+                    <path d="    M366.277,26.814L154.719,238.271c-10.729,10.221-10.729,26.192,0,36.413l211.559,211.455"
+                        style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
+                </g>
             </g>
-        </g>
-        <g id="Layer_1" />
-    </svg>
+            <g id="Layer_1" />
+        </svg>
     </button>
 
-    <!-- Articles -->
-    <div class="cache-carousel">
-        <ul #cache id="all-carousel-items" class="all-carousel-items carousel-container flex">
-            <li class="carousel-clothe-slide"><a routerLink="/products/9"><img src="assets/img/products-images/femme/robes/robe_1.jpeg"
-                alt="T-shirt noir"></a></li>
-            <li class="carousel-item carousel-clothe-slide display-none-mobile"><a routerLink="/products/3"><img
-                    src="assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg" alt="Pull blanc"></a></li>
-            <li class="carousel-item carousel-clothe-slide display-none-mobile"><a routerLink="/products/6"><img
-                    src="assets/img/products-images/femme/pull/pull-femme-orange/product6.jpeg" alt="Pull orange"></a></li>
-        </ul>
+    <div class="product-container">
+        <!-- Articles -->
+        <a class="product-card" routerLink="/products/9"><img src="assets/img/products-images/femme/robes/robe_1.jpeg"
+                alt="Robe d'été"></a>
+        <a class="product-card" routerLink="/products/3"><img
+                src="assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg"
+                alt="T-shirt noir"></a>
+        <a class="product-card" routerLink="/products/6"><img
+                src="assets/img/products-images/femme/pull/pull-femme-orange/product6.jpeg" alt="T-shirt noir"></a>
+        <a class="product-card" routerLink="/products/9"><img
+                src="assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg"
+                alt="T-shirt noir"></a>
+        <a class="product-card" routerLink="/products/9"><img
+                src="assets/img/products-images/femme/pull/pull-femme-orange/product6.jpeg" alt="T-shirt noir"></a>
+        <a class="product-card" routerLink="/products/9"><img src="assets/img/products-images/femme/robes/robe_1.jpeg"
+                alt="T-shirt noir"></a>
+        <a class="product-card" routerLink="/products/9"><img
+                src="assets/img/products-images/femme/pull/pull-femme-orange/product6.jpeg" alt="T-shirt noir"></a>
+        <a class="product-card" routerLink="/products/9"><img src="assets/img/products-images/femme/robes/robe_1.jpeg"
+                alt="T-shirt noir"></a>
+
     </div>
 
-    <!-- Bouton next -->
-    <button (click)="slideToRight()">
-    <svg class="next-btn-carousel" style="enable-background:new 0 0 512 512;"
-        version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="_x37_17-_next__x2C__arrow__x2C__right_arrow__x2C__direction__x2C_">
-            <g>
-                <path
-                    d="    M146.662,26.814L358.221,238.27c10.755,10.222,10.755,26.193,0,36.414L146.662,486.139"
-                    style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
+    <button class="nxt-btn">
+        <svg class="next-btn-carousel" style="enable-background:new 0 0 512 512;" version="1.1"
+            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="_x37_17-_next__x2C__arrow__x2C__right_arrow__x2C__direction__x2C_">
+                <g>
+                    <path d="    M146.662,26.814L358.221,238.27c10.755,10.222,10.755,26.193,0,36.414L146.662,486.139"
+                        style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
+                </g>
             </g>
-        </g>
-        <g id="Layer_1" />
-    </svg>
+            <g id="Layer_1" />
+        </svg>
     </button>
-    
+
 </section>

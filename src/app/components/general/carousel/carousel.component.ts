@@ -7,31 +7,31 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class CarouselComponent {
 
-  // Récupérer le contenant du carousel...
-  // carouselSlider = this.document.querySelector('.cache-carousel-two') as HTMLElement;
-  //carouselSlider: HTMLElement = this.document.getElementById('cache-carousel-two');
-
-  @ViewChild('cache', { static: false }) carouselSlider!: ElementRef;
-
-  ngAfterViewInit() {
-    this.carouselSlider;
+  ngOnInit() {
+    this.carouselAnimate();
   }
 
-// Prendre la longueur d'un élément du carousel
-itemWidth: number = 150;
+  carouselAnimate() {
+    const productContainers = document.querySelectorAll('.product-container');
+    const productContainersArray =
+      Array.prototype.slice.call(productContainers);
+    const nxtBtn = document.querySelectorAll('.nxt-btn');
+    const nxtBtnArray = Array.prototype.slice.call(nxtBtn);
+    const preBtn = document.querySelectorAll('.pre-btn');
+    const preBtnArray = Array.prototype.slice.call(preBtn);
 
-slideToLeft() {
-  this.carouselSlider.scrollBy({
-    left: this.itemWidth,
-    behavior: 'smooth',
-  });
-}
+    productContainersArray.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width / 2;
+      nxtBtnArray[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+      });
 
-slideToRight() {
-  this.carouselSlider.scrollBy({
-    left: -this.itemWidth,
-    behavior: 'smooth',
-  });
-}
+      preBtnArray[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+  }
 
 }

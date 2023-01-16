@@ -1,43 +1,28 @@
+/* Style des boutons */
 svg {
     min-width: 40px;
 }
-
 button {
     background-color: rgba(000, 000, 000, 0);
     border: none;
+}
+
+img {
+    width: 30vw;
+    height: 400px;
+    object-fit: cover;
 }
 
 .flex {
     display: flex;
 }
 
-.carousel {
-    margin-top: 39px;
-    justify-content: center;
-    align-items: center;
-    gap: 38px;
-}
-.cache-carousel {
-    overflow: hidden;
-}
-
-.carousel-clothe-slide {
-    list-style-type: none;
-}
-
-.carousel-clothe-slide img {
-    width: 30vw;
-    height: 300px;
-    object-fit: cover;
-}
-
-/* BOUTONS */
+/* Boutons */
 .previous-btn-carousel:hover,
 .next-btn-carousel:hover {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
 .previous-btn-carousel:hover {
     transform: translateX(-8px);
     transition: transform 0.3s;
@@ -47,16 +32,21 @@ button {
     transition: transform 0.3s;
 }
 
+/* Section */
+.carousel {
+    margin-top: 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
 
-/* News */
-
-.all-carousel-items {
-    display: inline-flex;
-    list-style-type: none;
-    margin: 20px;
-    padding: 10px;
-}  
-
+/* Conteneur de tous les produits */
+.product-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
 
 @media (max-width: 850px) {
 
@@ -64,15 +54,10 @@ button {
         gap: 5px;
     }
 
-    .display-none-mobile {
-        display: none;
-    }
-
-    .carousel-clothe-slide img {
+    img {
         width: 60vw;
         height: 50vh;
         object-fit: cover;
     }
-
 
 }
