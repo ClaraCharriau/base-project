@@ -3,3 +3,11 @@ h3 {
     font-weight: bold;
     margin-top: 60px;
 }
+
+div {
+    display: flex;
+    border: 2px solid red;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}

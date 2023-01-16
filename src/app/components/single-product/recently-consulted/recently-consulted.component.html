@@ -1,12 +1,29 @@
-<h3>Consultés récemment</h3>
+<!-- <h3>Consultés récemment</h3>
 
 <ul>
     <li *ngFor="let historiqueProduct of historique">
 
-        <h3>{{historiqueProduct.product.reference}}</h3>
+        <h3>{{historiqueProduct.reference}}</h3>
 
-        <!-- <app-product-card [historiqueProduct]="historiqueProduct" > </app-product-card> -->
+        <app-product-card [historiqueProduct]="historiqueProduct" > </app-product-card>
+        
+    </li>
+
+</ul> -->
+
+<h3>Consultés récemment</h3>
+
+<div> 
+
+<ul>
+    <li *ngFor="let product of historique">
+
+        <h3>{{product.reference}}</h3>
+
+        <app-product-card [item]="product" > </app-product-card>
         
     </li>
 
 </ul>
+
+</div>
