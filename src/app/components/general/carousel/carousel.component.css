@@ -8,7 +8,7 @@ button {
 }
 
 img {
-    width: 30vw;
+    width: 400px;
     height: 400px;
     object-fit: cover;
 }
@@ -41,7 +41,7 @@ img {
 }
 
 /* Conteneur de tous les produits */
-.product-container {
+.carousel-product-container {
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;

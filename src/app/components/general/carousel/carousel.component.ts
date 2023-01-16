@@ -12,12 +12,12 @@ export class CarouselComponent {
   }
 
   carouselAnimate() {
-    const productContainers = document.querySelectorAll('.product-container');
+    const productContainers = document.querySelectorAll('.carousel-product-container');
     const productContainersArray =
       Array.prototype.slice.call(productContainers);
-    const nxtBtn = document.querySelectorAll('.nxt-btn');
+    const nxtBtn = document.querySelectorAll('.next-btn');
     const nxtBtnArray = Array.prototype.slice.call(nxtBtn);
-    const preBtn = document.querySelectorAll('.pre-btn');
+    const preBtn = document.querySelectorAll('.previous-btn');
     const preBtnArray = Array.prototype.slice.call(preBtn);
 
     productContainersArray.forEach((item, i) => {
