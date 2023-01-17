@@ -4,10 +4,11 @@ h3 {
     margin-top: 60px;
 }
 
-div {
+ 
+ul {
+    list-style-type: none;
     display: flex;
-    border: 2px solid red;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
+
 }
