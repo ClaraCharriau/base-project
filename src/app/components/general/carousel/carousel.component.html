@@ -1,41 +1,60 @@
-<div class="carousel flex">
+<section class="carousel flex">
 
-    <!-- Bouton retour -->
-    <svg class="previous-btn-carousel" style="enable-background:new 0 0 512 512;"
-        version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="_x37_16-_back__x2C__left_arrow__x2C__direction__x2C_">
-            <g>
-                <path
-                    d="    M366.277,26.814L154.719,238.271c-10.729,10.221-10.729,26.192,0,36.413l211.559,211.455"
-                    style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
-            </g>
-        </g>
-        <g id="Layer_1" />
-    </svg>
+        <!-- Bouton précedent -->
+        <button class="previous-btn">
+                <svg class="previous-btn-carousel" style="enable-background:new 0 0 512 512;"
+                        version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="_x37_16-_back__x2C__left_arrow__x2C__direction__x2C_">
+                                <g>
+                                        <path d="    M366.277,26.814L154.719,238.271c-10.729,10.221-10.729,26.192,0,36.413l211.559,211.455"
+                                                style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
+                                </g>
+                        </g>
+                        <g id="Layer_1" />
+                </svg>
+        </button>
 
-    <!-- Articles -->
-    <ul class="carousel-container flex">
-        <li class="carousel-clothe-slide"><a routerLink="/products/9"><img src="assets/img/products-images/femme/robes/robe_1.jpeg"
-                alt="T-shirt noir"></a></li>
-        <li class="carousel-clothe-slide display-none-mobile"><a routerLink="/products/3"><img
-                src="assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg" alt="Veste noire"></a></li>
-        <li class="carousel-clothe-slide display-none-mobile"><a routerLink="/products/6"><img
-                src="assets/img/products-images/femme/pull/pull-femme-orange/product6.jpeg" alt="T-shirt blanc"></a></li>
-    </ul>
+        <div class="carousel-product-container">
+                <!-- Articles -->
+                <a class="product-card" routerLink="/products/32"><img
+                                src="assets/img/products-images/femme/bas/bas-jean-evase-bleach/bas_jean_evase_7_1.jpeg"
+                                alt="Jean évasé bleach"></a>
+                <a class="product-card" routerLink="/products/16"><img
+                                src="/assets/img/products-images/femme/robes/robe_8_2.jpeg" alt="Robe longue imprimée"></a>
+                <a class="product-card" routerLink="/products/9"><img
+                                src="assets/img/products-images/femme/robes/robe_1.jpeg" alt="Robe d'été"></a>
+                <a class="product-card" routerLink="/products/3"><img
+                                src="assets/img/products-images/femme/pull/pull-femme-blanc/pull_blanc_01 - Grande.jpeg"
+                                alt="Pull blanc"></a>
+                <a class="product-card" routerLink="/products/6"><img
+                                src="assets/img/products-images/femme/pull/pull-femme-orange/product6.jpeg"
+                                alt="Pull orange"></a>
+                <a class="product-card" routerLink="/products/17"><img
+                                src="assets/img/products-images/femme/tops/top-Chemise-poche-poitrine/top_1_1.jpeg"
+                                alt="Chemise femme poche poitrine"></a>
 
-    <!-- Bouton next -->
-    <svg class="next-btn-carousel" style="enable-background:new 0 0 512 512;"
-        version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="_x37_17-_next__x2C__arrow__x2C__right_arrow__x2C__direction__x2C_">
-            <g>
-                <path
-                    d="    M146.662,26.814L358.221,238.27c10.755,10.222,10.755,26.193,0,36.414L146.662,486.139"
-                    style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
-            </g>
-        </g>
-        <g id="Layer_1" />
-    </svg>
-    
-</div>
+                <a class="product-card" routerLink="/products/18"><img
+                                src="assets/img/products-images/femme/tops/top-T-shirt-basique-noir/top_2_3.jpeg"
+                                alt="T-shirt noir"></a>
+                <a class="product-card" routerLink="/products/34"><img
+                                src="/assets/img/products-images/femme/vetements-de-soiree/robe_de_soiree_2.jpeg"
+                                alt="Robe de soirée métalisée"></a>
+        </div>
+
+        <!-- Bouton suivant -->
+        <button class="next-btn">
+                <svg class="next-btn-carousel" style="enable-background:new 0 0 512 512;" version="1.1"
+                        viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="_x37_17-_next__x2C__arrow__x2C__right_arrow__x2C__direction__x2C_">
+                                <g>
+                                        <path d="    M146.662,26.814L358.221,238.27c10.755,10.222,10.755,26.193,0,36.414L146.662,486.139"
+                                                style="fill:none;stroke:#000000;stroke-width:13.4167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" />
+                                </g>
+                        </g>
+                        <g id="Layer_1" />
+                </svg>
+        </button>
+
+</section>

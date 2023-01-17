@@ -18,6 +18,13 @@ export class CartService {
 
   constructor(private productsService: ProductsService) { }
 
+  // Initialise le panier à l'ouverture de l'app
+  initCart() {
+    this.getCart();
+    this.getCartTotal();
+    this.getProductQuantity();
+  }
+
   // Création d'un panier 'cart'
   private createCart() {
     const newCart = JSON.stringify([]);
@@ -65,40 +72,35 @@ export class CartService {
 
     }
 
-    // et enregistre le panier
+    // et enregistre le panier, actualise quantité et prix total
     this.saveCart(cart);
-
-    
     this.getCartTotal();
     this.getProductQuantity();
 
   }
-  
-  removeProduct(index:number){
+
+  removeProduct(index: number) {
     // Récupèrer panier
     const cart = this.getCart();
     // supprimer à l'aide de .splice et l'index passé en argument
-    cart.splice(index,1);
-  
-    // Ensuite, on enregistrera le nouveau panier dans le localStorage , on recalculera le total et le nombre de produits
-    // localStorage.setItem('cart',JSON.stringify(cart))
-    
-    // enregistrer le panier
+    cart.splice(index, 1);
+
+    // enregistrer le panier, actualise quantité et prix total
     this.saveCart(cart);
     this.getCartTotal();
     this.getProductQuantity();
   }
 
-    // Fonction pour calculer le prix total du panier
-  getCartTotal():void{
+  // Fonction pour calculer le prix total du panier
+  getCartTotal(): void {
     // on récupère le prdt
     const cart = this.getCart();
     // On calcule le prix total
-    const total = cart.reduce((accumulator:number, currentValue: CartProduct)=>{
+    const total = cart.reduce((accumulator: number, currentValue: CartProduct) => {
       // Récupèrer directement le prdt ds les mocks
       const product = this.productsService.getProductById(currentValue.product.id);
       // Si le prdt n'existe pas, retournerla valeur de l'accumulator
-      if(!product)return accumulator;
+      if (!product) return accumulator;
       // Sinon, retourner: accumulator + prix du prdt + sa quantité
       return accumulator + (currentValue.quantity * product.price);
     }, 0);
@@ -108,22 +110,15 @@ export class CartService {
 
   // et ne s'affiche que si la page est rafraîchi...
 
-  getProductQuantity():void{
+  getProductQuantity(): void {
     const cart = this.getCart();
-    const total = cart.reduce((accumulator:number, currentValue:CartProduct)=>{
+    const total = cart.reduce((accumulator: number, currentValue: CartProduct) => {
       return accumulator += currentValue.quantity;
     }, 0);
     this.productQuantity = total;
   }
 
-  // Initialise le panier à l'ouverture de l'app
-  initCart(){
-    this.getCart();
-    this.getCartTotal();
-    this.getProductQuantity();
-  }
-  
 
-  }
+}
 
 
