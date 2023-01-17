@@ -41,15 +41,38 @@ export class RecentlyConsultedService {
     addProductToHistorique(product : Product) {
       // on récupère l'historique 
 
-
-      const historique = this.getHistorique();
+      let historique = this.getHistorique();
       // ajout d'un produit dans l'historique 
-      historique.push(product);
-      // enregistrement de l'historique dans localStorage
-      localStorage.setItem('historique', JSON.stringify(historique));
-    }
+
+      // est-ce que le produit existe déjà dans le localStorage?
+      const existingProduct = historique.find((newproduct: Product) => newproduct.id === product.id);
+
+      if (existingProduct) {
+        return } 
+        else if (historique.length >= 4) {
+          historique.splice(0, 1);
+          // splice permet de 
+          // 1 = index pour retirer le produit 
+          // 1 = nombre de produit que je veux retirer
+          historique.push(product);
+          // push permet de se mettre à la fin de l'historique 
+        } 
+        else {
+          historique.push(product);
+        }
+        // enregistrement de l'historique dans localStorage 
+        localStorage.setItem('historique', JSON.stringify(historique));
+        }
+      }
+
+    //   const historique = this.getHistorique();
+    //   // ajout d'un produit dans l'historique 
+    //   historique.push(product);
+    //   // enregistrement de l'historique dans localStorage
+    //   localStorage.setItem('historique', JSON.stringify(historique));
+    // }
   
-  }
+  
   
 
 

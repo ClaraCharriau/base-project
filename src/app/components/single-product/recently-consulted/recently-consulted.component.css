@@ -1,7 +1,7 @@
 h3 {
     font-size: clamp(30px, 3vw, 20px);
     font-weight: bold;
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
  
